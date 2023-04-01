@@ -10,7 +10,7 @@ public interface IProductRepository
      public   Task<bool> DeleteProduct(string id);
 
      public Task<IEnumerable<Product>> GetAllProducts();
-     public  Task<Product> GetProduct(string id);
+     public  Task<Product?> GetProduct(string id);
      public  Task<IEnumerable<Product>> GetProductsByName(string name);
      public Task<IEnumerable<Product>> GetProductsByCategory(string categoryName);
 

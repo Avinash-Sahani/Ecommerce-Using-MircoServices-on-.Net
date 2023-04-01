@@ -30,3 +30,16 @@ C:\Users\avina\source\repos\Ecommerce-Using-MircoServices-on-.Net\aspnetrun-micr
 C:\Users\avina\source\repos\Ecommerce-Using-MircoServices-on-.Net\aspnetrun-microservices\src\Services\Catalog\Catalog.API\obj\Debug\net6.0\Catalog.API.pdb
 C:\Users\avina\source\repos\Ecommerce-Using-MircoServices-on-.Net\aspnetrun-microservices\src\Services\Catalog\Catalog.API\obj\Debug\net6.0\Catalog.API.genruntimeconfig.cache
 C:\Users\avina\source\repos\Ecommerce-Using-MircoServices-on-.Net\aspnetrun-microservices\src\Services\Catalog\Catalog.API\obj\Debug\net6.0\ref\Catalog.API.dll
+C:\Users\avina\source\repos\Ecommerce-Using-MircoServices-on-.Net\aspnetrun-microservices\src\Services\Catalog\Catalog.API\bin\Debug\net6.0\AWSSDK.Core.dll
+C:\Users\avina\source\repos\Ecommerce-Using-MircoServices-on-.Net\aspnetrun-microservices\src\Services\Catalog\Catalog.API\bin\Debug\net6.0\AWSSDK.SecurityToken.dll
+C:\Users\avina\source\repos\Ecommerce-Using-MircoServices-on-.Net\aspnetrun-microservices\src\Services\Catalog\Catalog.API\bin\Debug\net6.0\DnsClient.dll
+C:\Users\avina\source\repos\Ecommerce-Using-MircoServices-on-.Net\aspnetrun-microservices\src\Services\Catalog\Catalog.API\bin\Debug\net6.0\MongoDB.Bson.dll
+C:\Users\avina\source\repos\Ecommerce-Using-MircoServices-on-.Net\aspnetrun-microservices\src\Services\Catalog\Catalog.API\bin\Debug\net6.0\MongoDB.Driver.dll
+C:\Users\avina\source\repos\Ecommerce-Using-MircoServices-on-.Net\aspnetrun-microservices\src\Services\Catalog\Catalog.API\bin\Debug\net6.0\MongoDB.Driver.Core.dll
+C:\Users\avina\source\repos\Ecommerce-Using-MircoServices-on-.Net\aspnetrun-microservices\src\Services\Catalog\Catalog.API\bin\Debug\net6.0\MongoDB.Libmongocrypt.dll
+C:\Users\avina\source\repos\Ecommerce-Using-MircoServices-on-.Net\aspnetrun-microservices\src\Services\Catalog\Catalog.API\bin\Debug\net6.0\SharpCompress.dll
+C:\Users\avina\source\repos\Ecommerce-Using-MircoServices-on-.Net\aspnetrun-microservices\src\Services\Catalog\Catalog.API\bin\Debug\net6.0\Snappier.dll
+C:\Users\avina\source\repos\Ecommerce-Using-MircoServices-on-.Net\aspnetrun-microservices\src\Services\Catalog\Catalog.API\bin\Debug\net6.0\ZstdSharp.dll
+C:\Users\avina\source\repos\Ecommerce-Using-MircoServices-on-.Net\aspnetrun-microservices\src\Services\Catalog\Catalog.API\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\avina\source\repos\Ecommerce-Using-MircoServices-on-.Net\aspnetrun-microservices\src\Services\Catalog\Catalog.API\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\avina\source\repos\Ecommerce-Using-MircoServices-on-.Net\aspnetrun-microservices\src\Services\Catalog\Catalog.API\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll

@@ -44,7 +44,7 @@ public class ProductRepository : IProductRepository
         return await Context.Products.Find(product => true).ToListAsync();
     }
 
-    public async Task<Product> GetProduct(string id)
+    public async Task<Product?> GetProduct(string id)
     {
         return await Context.Products.Find(product => product.Id.Equals(id)).FirstOrDefaultAsync();
     }

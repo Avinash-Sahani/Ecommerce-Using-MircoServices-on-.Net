@@ -33,5 +33,5 @@ public class CatalogContext : ICatalogContext
     }
 
 
-    public IMongoCollection<Product>? Products { get; set; }
+    public IMongoCollection<Product> Products { get; set; }
 }

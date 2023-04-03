@@ -7,8 +7,8 @@ namespace Catalog.API.Data;
 
 public class CatalogContext : ICatalogContext
 {
-    private IConfiguration Configuration { get; set; }
-    public CatalogContext(IConfiguration config)
+    private IConfiguration? Configuration { get; set; }
+    public CatalogContext(IConfiguration? config)
     {
         Configuration = config;
         InitializeMongoDb();
@@ -33,5 +33,5 @@ public class CatalogContext : ICatalogContext
     }
 
 
-    public IMongoCollection<Product> Products { get; set; }
+    public IMongoCollection<Product> Products { get; set; } 
 }

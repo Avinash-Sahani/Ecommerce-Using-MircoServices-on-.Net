@@ -6,18 +6,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.aspnetrun-microservices/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/AWSSDK.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/AWSSDK.SecurityToken.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/Catalog.API.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/Catalog.API.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/Catalog.API.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/Catalog.API.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/Catalog.API.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/DnsClient.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/Microsoft.OpenApi.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/MongoDB.Bson.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/MongoDB.Driver.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/MongoDB.Driver.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/MongoDB.Libmongocrypt.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/SharpCompress.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/Snappier.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/Swashbuckle.AspNetCore.Swagger.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/Swashbuckle.AspNetCore.SwaggerGen.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/Swashbuckle.AspNetCore.SwaggerUI.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/ZstdSharp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/runtimes/linux/native/libmongocrypt.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/runtimes/osx/native/libmongocrypt.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/runtimes/win/native/mongocrypt.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider-publish/web.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/PublishOutputs.439c1f8eac.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/staticwebassets.publish.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Controllers/CatalogController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Controllers/CatalogController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Data/CatalogContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Data/CatalogContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Localization/Localizable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Localization/Localizable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Catalog.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Catalog.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Data/CatalogContextSeed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Data/CatalogContextSeed.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/bin/Debug/net6.0/Catalog.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/bin/Debug/net6.0/Catalog.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/bin/Debug/net6.0/Catalog.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/bin/Debug/net6.0/Catalog.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/bin/Debug/net6.0/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/bin/Debug/net6.0/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/bin/Debug/net6.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/bin/Debug/net6.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/ref/Catalog.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/ref/Catalog.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/refint/Catalog.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/refint/Catalog.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +62,9 @@
     &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -38,13 +74,18 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2f10f2a1f3bbdbc3696823de50e6726ba2ae7f8cf2e6dfc487a9c0b8c1f7b4/ConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3839fc8fee5ae62538a4469ed86bbba1ccd15d4e0da63bba779abe1719da3/IConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/42794acf9c224fece37166245d579235973727b16c1931c5ccd329df39ad78/ConfigurationBinder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4ed670d711d7b07aabb459cee330d6bff3b4811ae4b41973b7c84261c4ae/IMongoDatabase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/501e16d8c2c1e65d99afc461a23a5b5e4b73f04805c9349a1d0b9575c68f8/Builders.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7df7da5b32d9ba52a4065e8e7546f391a2ae3d8cd3753c3cc254f332faf6d/DeleteResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a928d32776b965fad37de1e32a13705f8ee6c9e4abebc72bdca133f0fdc9b0/ReplaceOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b8583cb77a276fb9dbb7a8c129291eddb743424cae4f212cdbb0b092cd44115e/IMongoCollection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c4bf5b7e1f6dad83b16c10e468186df52ccb21277b3e31a56c4178a97/MongoClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d32428f0bd308c47ce3854f52d63412a5128a6bc65426eebceb6dbde50f713/RouteAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Data/ICatalogContext.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -60,24 +101,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Docker&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\avina\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\avina\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\avina\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\avina\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\avina\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\avina\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.Catalog.API">
+}</component>
+  <component name="RunManager" selected="Docker.DockerCompose">
     <configuration name="Catalog.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Catalog.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
@@ -108,6 +150,118 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Catalog.API/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="CatalogDockeri" />
+          <option name="showCommandPreview" value="true" />
+          <option name="sourceFilePath" value="src/Services/Catalog/Catalog.API/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DebuhDocker" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildOnly" value="true" />
+          <option name="containerName" value="CatalogDb" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="27017" />
+                <option name="hostPort" value="27017" />
+              </DockerPortBindingImpl>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="80" />
+                <option name="hostPort" value="8000" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="showCommandPreview" value="true" />
+          <option name="sourceFilePath" value="src/Services/Catalog/Catalog.API/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DockerCompose" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="services">
+            <list>
+              <option value="catalog.api" />
+              <option value="catalogdb" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="src/Services/Catalog/Catalog.API/docker-compose.yml" />
+          <option name="upForceRecreate" value="true" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DockerTest" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="services">
+            <list>
+              <option value="catalog.api" />
+              <option value="catalogdb" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="src/Services/Catalog/Catalog.API/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed (1)" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="src/Services/Catalog/Catalog.API/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
+      <deployment type="docker-image">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.Catalog.API" />
+      <item itemvalue=".NET Launch Settings Profile.Catalog.API: IIS Express" />
+      <item itemvalue="Docker.DockerCompose" />
+      <item itemvalue="Docker.DockerTest" />
+      <item itemvalue="Docker.DebuhDocker" />
+      <item itemvalue="Docker.Unnamed (1)" />
+      <item itemvalue="Docker.Catalog.API/Dockerfile" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.Catalog.API/Dockerfile" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -124,6 +278,11 @@
       <workItem from="1680300425468" duration="12697000" />
       <workItem from="1680360609220" duration="1955000" />
       <workItem from="1680554121074" duration="8155000" />
+      <workItem from="1680642300847" duration="6274000" />
+      <workItem from="1680648860627" duration="995000" />
+      <workItem from="1680714100077" duration="4119000" />
+      <workItem from="1680724712596" duration="7221000" />
+      <workItem from="1680820030191" duration="3122000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>
@@ -152,12 +311,28 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Implemented Basic Data Layer" />
     <option name="LAST_COMMIT_MESSAGE" value="Implemented Basic Data Layer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Data/CatalogContext.cs</url>
+          <line>12</line>
+          <properties documentPath="C:\Users\avina\source\repos\Ecommerce-Using-MircoServices-on-.Net\aspnetrun-microservices\src\Services\Catalog\Catalog.API\Data\CatalogContext.cs" initialLine="12" containingFunctionPresentation="constructor 'CatalogContext'">
+            <startOffsets>
+              <option value="298" />
+            </startOffsets>
+            <endOffsets>
+              <option value="321" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="DotNet Exception Breakpoints" />
       </default-breakpoints>

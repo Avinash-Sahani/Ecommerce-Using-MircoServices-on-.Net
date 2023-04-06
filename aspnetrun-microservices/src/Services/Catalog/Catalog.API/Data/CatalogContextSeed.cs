@@ -85,10 +85,13 @@ public class CatalogContextSeed
     public static void SeedData(IMongoCollection<Product>? products)
     {
         if(products == null) return;
-        if (DoesAnyProductExist(products)) return;
+      if (DoesAnyProductExist(products)) return;
         products.InsertManyAsync(ProductsData);
 
     }
 
-    private static bool DoesAnyProductExist(IMongoCollection<Product> products) => products.Find(p => true).Any();
+    private static bool DoesAnyProductExist(IMongoCollection<Product> products)
+    {
+        return products.Find(product =>true ).Any();
+    } 
 }

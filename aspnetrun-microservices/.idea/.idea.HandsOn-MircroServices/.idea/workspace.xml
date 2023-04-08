@@ -5,52 +5,8 @@
     <projectFile profileName="IIS Express">src/Services/Catalog/Catalog.API/Catalog.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/AWSSDK.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/AWSSDK.SecurityToken.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/Catalog.API.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/Catalog.API.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/Catalog.API.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/Catalog.API.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/Catalog.API.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/DnsClient.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/Microsoft.OpenApi.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/MongoDB.Bson.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/MongoDB.Driver.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/MongoDB.Driver.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/MongoDB.Libmongocrypt.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/SharpCompress.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/Snappier.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/Swashbuckle.AspNetCore.Swagger.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/Swashbuckle.AspNetCore.SwaggerGen.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/Swashbuckle.AspNetCore.SwaggerUI.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/ZstdSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/runtimes/linux/native/libmongocrypt.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/runtimes/osx/native/libmongocrypt.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/runtimes/win/native/mongocrypt.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/rider-publish/web.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/PublishOutputs.439c1f8eac.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/staticwebassets.publish.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/indexLayout.xml" afterDir="false" />
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🐛(docker-compose): Pushed docker-compose">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Catalog.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Catalog.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Data/CatalogContextSeed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Data/CatalogContextSeed.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/bin/Debug/net6.0/Catalog.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/bin/Debug/net6.0/Catalog.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/bin/Debug/net6.0/Catalog.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/bin/Debug/net6.0/Catalog.API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/bin/Debug/net6.0/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/bin/Debug/net6.0/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/bin/Debug/net6.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/bin/Debug/net6.0/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +238,7 @@
       <workItem from="1680648860627" duration="995000" />
       <workItem from="1680714100077" duration="4119000" />
       <workItem from="1680724712596" duration="7221000" />
-      <workItem from="1680820030191" duration="3122000" />
+      <workItem from="1680820030191" duration="4285000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>
@@ -291,7 +247,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680313616100</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="🐛(docker-compose) : Fixed  Issue of Mongob in development mode by adding mongod Command">
+      <created>1680823714879</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680823714879</updated>
+    </task>
+    <task id="LOCAL-00003" summary="🐛(docker-compose): Pushed docker-compose">
+      <created>1680823765581</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680823765581</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +284,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Implemented Basic Data Layer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Basic Data Layer" />
+    <MESSAGE value="(docker-compose) : Fixed  Issue of Mongob in development mode by adding mongod Command" />
+    <MESSAGE value="(docker-compose): Pushed docker-compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="(docker-compose): Pushed docker-compose" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

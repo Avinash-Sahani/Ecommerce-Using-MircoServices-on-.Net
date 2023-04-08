@@ -8,12 +8,14 @@
     <projectFile profileName="IIS Express">src/Services/Catalog/Catalog.API/Catalog.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Localization/Localizable.cs" afterDir="false" />
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="✨(Program.cs) : Added Redis Service on Startup">
+      <change afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/JsonHelpers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Repositories/BasketRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Repositories/IBasketRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/HandsOn-MircroServices/FileContentIndex/3fa3f4b3-b0a1-4a8e-b877-3c46cd6ca9e4.vsidx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Basket.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Basket.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Basket/Basket.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,10 +46,13 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4ed670d711d7b07aabb459cee330d6bff3b4811ae4b41973b7c84261c4ae/IMongoDatabase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/501e16d8c2c1e65d99afc461a23a5b5e4b73f04805c9349a1d0b9575c68f8/Builders.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7df7da5b32d9ba52a4065e8e7546f391a2ae3d8cd3753c3cc254f332faf6d/DeleteResult.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9a681c729aca2ccbcfe4f9949c066d9bff4aac0b76afb62deee3ebffd93ab5e/DistributedCacheExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9e86c3ea3ae433bc7c87cfb655f15d439c9e4a23166e4f22bb595d9df620b1/IDistributedCache.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a928d32776b965fad37de1e32a13705f8ee6c9e4abebc72bdca133f0fdc9b0/ReplaceOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b8583cb77a276fb9dbb7a8c129291eddb743424cae4f212cdbb0b092cd44115e/IMongoCollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c4bf5b7e1f6dad83b16c10e468186df52ccb21277b3e31a56c4178a97/MongoClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d32428f0bd308c47ce3854f52d63412a5128a6bc65426eebceb6dbde50f713/RouteAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f3981d658666ec9cc1e6958fe22f8614bfe02ccb6625b056c3ece3729c9262/JsonConvert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Data/ICatalogContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Release/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -179,6 +184,7 @@
       <workItem from="1680724712596" duration="7221000" />
       <workItem from="1680820030191" duration="4285000" />
       <workItem from="1680971190404" duration="7762000" />
+      <workItem from="1680987939007" duration="3941000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>
@@ -236,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680985631493</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="✨(Program.cs) : Added Redis Service on Startup">
+      <created>1680988067883</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680988067883</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +279,8 @@
     <MESSAGE value=" (Basket.API) : Fixed Project structure" />
     <MESSAGE value="(Basket.Api) : Added Entities ShoppingCart.cs and ShoppingCartItem.cs" />
     <MESSAGE value="(Basket.API) : Added Redis Package in Basket Api" />
-    <option name="LAST_COMMIT_MESSAGE" value="(Basket.API) : Added Redis Package in Basket Api" />
+    <MESSAGE value="✨(Program.cs) : Added Redis Service on Startup" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨(Program.cs) : Added Redis Service on Startup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

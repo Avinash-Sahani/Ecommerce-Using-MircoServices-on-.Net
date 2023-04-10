@@ -1,8 +1,9 @@
 
+using Basket.API.Repositories;
 using Catalog.API.Localization;
 
 var builder = WebApplication.CreateBuilder(args);
-
+var configuration = builder.Configuration;
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -11,6 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 AddRedisService();
+builder.Services.AddScoped<IBasketRepository, BasketRepository>();
 
 var app = builder.Build();
 
@@ -36,12 +38,9 @@ void AddRedisService()
 {
     builder.Services.AddStackExchangeRedisCache(options =>
     {
-        options.Configuration = GetConnectionString(); // Replace with your Redis server details// Replace with a unique name for your application
-
-        string? GetConnectionString()
-        {
-           return builder.Configuration.GetValue<string>(Localizable.ConnectionString);
-        }
+        options.Configuration = configuration[Localizable.CacheUrl]; 
+        options.InstanceName = "Basket";
+        
     });
 }
 

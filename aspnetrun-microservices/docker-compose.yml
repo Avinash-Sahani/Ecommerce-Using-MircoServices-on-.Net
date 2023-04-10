@@ -12,7 +12,7 @@ services:
     image : ${DOCKER_REGISTRY-}catalogapi
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: /src/Services/Catalog/Catalog.API/Dockerfile
     container_name: catalog.api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
@@ -21,5 +21,25 @@ services:
       - "8000:80"
     depends_on:
       - catalogdb
+  
+  basketdb:
+    image: redis
+    container_name: basketdb
+    restart: always
+    ports:
+      - "6379:6379"
+  basket.api:
+    build:
+      context: .
+      dockerfile: /src/Services/Basket/Basket.API/Dockerfile
+    container_name: basket.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "Redis:CacheUrl=basketdb:6379,abortConnect=false"
+    ports:
+      - "8001:80"
+    depends_on:
+      - basketdb
     
+
 

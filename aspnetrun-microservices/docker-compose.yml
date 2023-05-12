@@ -7,9 +7,12 @@ services:
     ports:
       - "27017:27017"
     command: ["mongod", "--port", "27017"]
+    volumes:
+      - mongo_data:/data/db
+    
   
   catalog.api:
-    image : ${DOCKER_REGISTRY-}catalogapi
+    image: ${DOCKER_REGISTRY-}catalogapi
     build:
       context: .
       dockerfile: /src/Services/Catalog/Catalog.API/Dockerfile
@@ -22,12 +25,18 @@ services:
     depends_on:
       - catalogdb
   
+ 
+  
+  
+    
   basketdb:
     image: redis
     container_name: basketdb
     restart: always
     ports:
       - "6379:6379"
+  
+  
   basket.api:
     build:
       context: .
@@ -41,5 +50,17 @@ services:
     depends_on:
       - basketdb
     
-
-
+    
+  portainer:
+    image: portainer/portainer-ce
+    restart: always
+    ports:
+      - "9000:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data  
+  
+  
+volumes:
+  mongo_data:
+  portainer_data:

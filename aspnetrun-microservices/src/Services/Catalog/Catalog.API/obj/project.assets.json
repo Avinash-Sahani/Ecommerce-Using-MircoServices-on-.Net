@@ -970,11 +970,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\avina\\source\\repos\\Ecommerce-Using-MircoServices-on-.Net\\aspnetrun-microservices\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
+      "projectUniqueName": "C:\\Users\\avina\\RiderProjects\\MicroServices-Ecommerce\\aspnetrun-microservices\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
       "projectName": "Catalog.API",
-      "projectPath": "C:\\Users\\avina\\source\\repos\\Ecommerce-Using-MircoServices-on-.Net\\aspnetrun-microservices\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
+      "projectPath": "C:\\Users\\avina\\RiderProjects\\MicroServices-Ecommerce\\aspnetrun-microservices\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
       "packagesPath": "C:\\Users\\avina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\avina\\source\\repos\\Ecommerce-Using-MircoServices-on-.Net\\aspnetrun-microservices\\src\\Services\\Catalog\\Catalog.API\\obj\\",
+      "outputPath": "C:\\Users\\avina\\RiderProjects\\MicroServices-Ecommerce\\aspnetrun-microservices\\src\\Services\\Catalog\\Catalog.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\avina\\AppData\\Roaming\\NuGet\\NuGet.Config",

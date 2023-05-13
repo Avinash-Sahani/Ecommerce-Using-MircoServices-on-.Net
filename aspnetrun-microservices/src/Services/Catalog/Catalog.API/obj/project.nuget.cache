@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VTBuqWoKoFLMDVMy2Lsv9ttaNtaU9nvU9E3hyaAXs7j4SClHa0yYb3mE//agBQUGCDDiIjJEgHHxqjOGxceNEQ==",
+  "dgSpecHash": "eKP2+KWWq3ENFcsanUb0wqhNrApUpH9B3nkK6jrQcDfUN+XP4jHD6h7QGqXk+CmxXADzDxRHX34AH/cIwZy8DQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\avina\\source\\repos\\Ecommerce-Using-MircoServices-on-.Net\\aspnetrun-microservices\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
+  "projectFilePath": "C:\\Users\\avina\\RiderProjects\\MicroServices-Ecommerce\\aspnetrun-microservices\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\avina\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\avina\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

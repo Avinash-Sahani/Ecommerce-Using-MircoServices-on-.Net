@@ -50,7 +50,28 @@ services:
     depends_on:
       - basketdb
     
-    
+  discountdb:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: admin1234
+      POSTGRES_USER : admin
+      POSTGRES_DB: DiscountDb
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  
+  
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@aspnetrun.com
+      PGADMIN_DEFAULT_PASSWORD: admin1234
+    restart:  always
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin_data:/root/.pgadmin
+  
   portainer:
     image: portainer/portainer-ce
     restart: always
@@ -64,3 +85,5 @@ services:
 volumes:
   mongo_data:
   portainer_data:
+  postgres_data:  
+  pgadmin_data:

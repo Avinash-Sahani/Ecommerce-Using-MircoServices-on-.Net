@@ -6,11 +6,13 @@
     <projectFile profileName="https">src/Services/Basket/Basket.API/Basket.API.csproj</projectFile>
     <projectFile profileName="Catalog.API">src/Services/Catalog/Catalog.API/Catalog.API.csproj</projectFile>
     <projectFile profileName="IIS Express">src/Services/Catalog/Catalog.API/Catalog.API.csproj</projectFile>
+    <projectFile profileName="Discount.API">src/Services/Discount/Discount.API/Discount.API.csproj</projectFile>
+    <projectFile profileName="IIS Express">src/Services/Discount/Discount.API/Discount.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="Just Checking Everyyhing is Working Fine">
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="✨(Discount.Api) : Intialized Discount.API">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HandsOn-MircroServices.sln" beforeDir="false" afterPath="$PROJECT_DIR$/HandsOn-MircroServices.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +254,7 @@
       <workItem from="1680820030191" duration="4285000" />
       <workItem from="1680971190404" duration="7762000" />
       <workItem from="1680987939007" duration="3941000" />
-      <workItem from="1683983904944" duration="2712000" />
+      <workItem from="1683983904944" duration="5286000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>
@@ -345,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683984521222</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="✨(Discount.Api) : Intialized Discount.API">
+      <created>1683995470413</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1683995470413</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +389,8 @@
     <MESSAGE value="✨(appsettings.json) : Fix conncetion issues" />
     <MESSAGE value="(docker-compose.yml) : Moved docker-compose from catalog.api" />
     <MESSAGE value="Just Checking Everyyhing is Working Fine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Just Checking Everyyhing is Working Fine" />
+    <MESSAGE value="✨(Discount.Api) : Intialized Discount.API" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨(Discount.Api) : Intialized Discount.API" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

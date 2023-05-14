@@ -7,7 +7,7 @@ public class DatabaseConnection : IDbConnection
 {
     public IConfiguration Configuration { get; set; }
     
-    public NpgsqlConnection? Connection { get; set; } 
+    public NpgsqlConnection? DbConnection { get; set; } 
 
     public DatabaseConnection(IConfiguration configuration)
     {
@@ -20,7 +20,7 @@ public class DatabaseConnection : IDbConnection
         try
         {
             var connectionString = Configuration.GetValue<string>(Localizable.ConnectionString);
-            Connection = new NpgsqlConnection(connectionString);
+            DbConnection = new NpgsqlConnection(connectionString);
         }
         catch (Exception e)
         { 

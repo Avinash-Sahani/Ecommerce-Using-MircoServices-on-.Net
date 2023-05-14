@@ -10,9 +10,17 @@
     <projectFile profileName="IIS Express">src/Services/Discount/Discount.API/Discount.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="✨(Discount.Api) : Intialized Discount.API">
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="✨(Databaseconnection,DiscountRepository) : Added Data and Business Layer and also their Dependicies">
+      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Controllers/DiscountController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Data/DatabaseConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Data/DatabaseConnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Data/IDbConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Data/IDbConnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Discount.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Discount.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Entities/Coupon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Entities/Coupon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Localization/Localizable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Localization/Localizable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Repositories/DiscountRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Repositories/DiscountRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +45,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70f617fc68cf47c4af27e06f2b56f801b1c8a8/54/0ba919a5/AsyncValueTaskMethodBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c13f49990bf34d18b209c4f451026a97a226b0/f2/5c6ee142/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/12ce3c2b287b1deb85cf8b1d75df29b2d8ac68a7c562f093813f2d9e55e1b6f/ConfigureNamedOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2f10f2a1f3bbdbc3696823de50e6726ba2ae7f8cf2e6dfc487a9c0b8c1f7b4/ConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/30f9b5142f17662d07ec32d28e81835335cf45a755b613183ff1e20cb8b8/RedisCacheOptions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -46,6 +55,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4ed670d711d7b07aabb459cee330d6bff3b4811ae4b41973b7c84261c4ae/IMongoDatabase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/501e16d8c2c1e65d99afc461a23a5b5e4b73f04805c9349a1d0b9575c68f8/Builders.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/50245137e992c658ce9f9f5fa1d238ff075ad58ef9acb8b123992aa68ce9f/Throw.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/575c31ecc35a636b6f962cb71d53992552941a18982aae1c8e6c16305cc3761b/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/73f58a70a76e491eb4bcf9d90ef5628b378a8/_8ad91/HttpStatusCode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7df7da5b32d9ba52a4065e8e7546f391a2ae3d8cd3753c3cc254f332faf6d/DeleteResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8afd6870c47fcf36d178e7775a26ed527416b2ae9996d81422b0f0ac26d03d/ConfigurationOptions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -98,7 +108,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected=".NET Launch Settings Profile.Discount.API">
     <configuration name="Basket.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Basket/Basket.API/Basket.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -255,6 +265,8 @@
       <workItem from="1680971190404" duration="7762000" />
       <workItem from="1680987939007" duration="3941000" />
       <workItem from="1683983904944" duration="5286000" />
+      <workItem from="1683999611991" duration="11829000" />
+      <workItem from="1684074468480" duration="3409000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>
@@ -354,7 +366,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683995470413</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="✨(Enities-&gt; Coupon) : Added Entity Class Coupon">
+      <created>1684012838398</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1684012838398</updated>
+    </task>
+    <task id="LOCAL-00016" summary="✨(Databaseconnection,DiscountRepository) : Added Data and Business Layer and also their Dependicies">
+      <created>1684019192587</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1684019192587</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,23 +416,25 @@
     <MESSAGE value="(docker-compose.yml) : Moved docker-compose from catalog.api" />
     <MESSAGE value="Just Checking Everyyhing is Working Fine" />
     <MESSAGE value="✨(Discount.Api) : Intialized Discount.API" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨(Discount.Api) : Intialized Discount.API" />
+    <MESSAGE value="✨(Enities-&gt; Coupon) : Added Entity Class Coupon" />
+    <MESSAGE value="✨(Databaseconnection,DiscountRepository) : Added Data and Business Layer and also their Dependicies" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨(Databaseconnection,DiscountRepository) : Added Data and Business Layer and also their Dependicies" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Data/CatalogContext.cs</url>
-          <line>12</line>
-          <properties documentPath="C:\Users\avina\source\repos\Ecommerce-Using-MircoServices-on-.Net\aspnetrun-microservices\src\Services\Catalog\Catalog.API\Data\CatalogContext.cs" initialLine="12" containingFunctionPresentation="constructor 'CatalogContext'">
+          <url>file://$PROJECT_DIR$/src/Services/Discount/Discount.API/Repositories/DiscountRepository.cs</url>
+          <line>26</line>
+          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Discount\Discount.API\Repositories\DiscountRepository.cs" initialLine="26" containingFunctionPresentation="method 'GetDiscount'">
             <startOffsets>
-              <option value="298" />
+              <option value="676" />
             </startOffsets>
             <endOffsets>
-              <option value="321" />
+              <option value="857" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

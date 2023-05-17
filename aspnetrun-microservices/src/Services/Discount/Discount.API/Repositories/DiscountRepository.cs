@@ -33,21 +33,34 @@ public class DiscountRepository : IDiscountRepository
             Logger.LogError(e.Message ?? string.Empty);
         }
 
-        return coupon ??= Coupon.Default;
+        return coupon ?? Coupon.Default;
     }
 
     public async  Task<bool> CreateDiscount(Coupon coupon)
     {
-        throw new NotImplementedException();
+        var query = "INSERT INTO Coupon (ProductName,Description,Amount) VALUES (@ProductName, @Description,@Amount)";
+        var parameters = new
+            { ProdcutName = coupon.ProductName, Description = coupon.Description, Amount = coupon.Description };
+        var isQuerySuccefullyExecuted = await DbConnection.ExecuteAsync(query, coupon);
+        return isQuerySuccefullyExecuted != 0;
     }
 
     public async  Task<bool> UpdateDiscount(Coupon coupon)
     {
-        throw new NotImplementedException();
+        var query = "UPDATE Coupon SET ProductName=@ProductName,Description=@Description,Amount=@Amount  WHERE Id=@Id";
+        var parameters = new
+            { ProdcutName = coupon.ProductName, Description = coupon.Description, Amount = coupon.Description ,Id=coupon.Id};
+        var isQuerySuccefullyExecuted = await DbConnection.ExecuteAsync(query, coupon);
+        return isQuerySuccefullyExecuted != 0;
+
     }
 
     public async  Task<bool> DeleteDiscount(string productName)
     {
-        throw new NotImplementedException();
+        var query = "DELETE FROM  Coupon  WHERE ProductName=@ProductName";
+        var parameters = new
+            { ProductName = productName};
+        var isQuerySuccefullyExecuted = await DbConnection.ExecuteAsync(query, parameters);
+        return isQuerySuccefullyExecuted != 0;
     }
 }

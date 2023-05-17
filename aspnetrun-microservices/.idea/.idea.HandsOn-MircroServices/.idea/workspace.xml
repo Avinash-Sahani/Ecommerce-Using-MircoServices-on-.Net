@@ -11,16 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="✨(Databaseconnection,DiscountRepository) : Added Data and Business Layer and also their Dependicies">
-      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Controllers/DiscountController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Data/DatabaseConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Data/DatabaseConnection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Data/IDbConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Data/IDbConnection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Discount.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Discount.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Entities/Coupon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Entities/Coupon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Localization/Localizable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Localization/Localizable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider-publish/Catalog.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider-publish/Catalog.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider-publish/Catalog.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider-publish/Catalog.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider-publish/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider-publish/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Debug/net6.0/Catalog.API.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Controllers/DiscountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Controllers/DiscountController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Repositories/DiscountRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Repositories/DiscountRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,6 +264,7 @@
       <workItem from="1683983904944" duration="5286000" />
       <workItem from="1683999611991" duration="11829000" />
       <workItem from="1684074468480" duration="3409000" />
+      <workItem from="1684345939348" duration="6402000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>
@@ -422,21 +420,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Services/Discount/Discount.API/Repositories/DiscountRepository.cs</url>
-          <line>26</line>
-          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Discount\Discount.API\Repositories\DiscountRepository.cs" initialLine="26" containingFunctionPresentation="method 'GetDiscount'">
-            <startOffsets>
-              <option value="676" />
-            </startOffsets>
-            <endOffsets>
-              <option value="857" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="DotNet Exception Breakpoints" />
       </default-breakpoints>

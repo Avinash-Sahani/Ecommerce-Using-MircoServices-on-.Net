@@ -15,6 +15,7 @@ builder.Services.AddScoped<IDbConnection, DatabaseConnection>();
 
 var app = builder.Build();
 
+app.MigrateDatabase<Program>();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

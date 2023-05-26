@@ -8,18 +8,18 @@
     <projectFile profileName="IIS Express">src/Services/Catalog/Catalog.API/Catalog.API.csproj</projectFile>
     <projectFile profileName="Discount.API">src/Services/Discount/Discount.API/Discount.API.csproj</projectFile>
     <projectFile profileName="IIS Express">src/Services/Discount/Discount.API/Discount.API.csproj</projectFile>
+    <projectFile profileName="Discount.Grpc">src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="✨(Databaseconnection,DiscountRepository) : Added Data and Business Layer and also their Dependicies">
-      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/HostExtension.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider-publish/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider-publish/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider-publish/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider-publish/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Discount.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Discount.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.API/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Properties/launchSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Protos/greet.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Services/GreeterService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HandsOn-MircroServices.sln" beforeDir="false" afterPath="$PROJECT_DIR$/HandsOn-MircroServices.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,6 +169,21 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Discount.Grpc" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="Discount.Grpc" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="Basket.API/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -241,6 +256,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue=".NET Launch Settings Profile.Discount.Grpc" />
       <item itemvalue=".NET Launch Settings Profile.Discount.API" />
       <item itemvalue=".NET Launch Settings Profile.Discount.API: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.Basket.API" />
@@ -289,6 +305,7 @@
       <workItem from="1684438190377" duration="4758000" />
       <workItem from="1684443937074" duration="2479000" />
       <workItem from="1684865463096" duration="5879000" />
+      <workItem from="1685048765904" duration="834000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>

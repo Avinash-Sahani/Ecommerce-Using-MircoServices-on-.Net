@@ -11,15 +11,17 @@
     <projectFile profileName="Discount.Grpc">src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🚧(Discount.Grpc) : Created Discount Grpc Service Project">
-      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Data/DatabaseConnection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Data/IDbConnection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Entities/Coupon.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Localization/Localizable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Repositories/DiscountRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Repositories/IDiscountRepository.cs" afterDir="false" />
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/HostExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Protos/discount.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Services/DiscountService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Protos/greet.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Services/GreeterService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +47,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70f617fc68cf47c4af27e06f2b56f801b1c8a8/54/0ba919a5/AsyncValueTaskMethodBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b27001fc3a3a410d8f2eeb5a8de7b2742d86a8/1d/2336526c/IDbConnection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bb7b8e9f82ee4cc296a57aef759a3b4b145000/ef/dd800da9/NpgsqlConnection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c13f49990bf34d18b209c4f451026a97a226b0/f2/5c6ee142/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/12ce3c2b287b1deb85cf8b1d75df29b2d8ac68a7c562f093813f2d9e55e1b6f/ConfigureNamedOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2f10f2a1f3bbdbc3696823de50e6726ba2ae7f8cf2e6dfc487a9c0b8c1f7b4/ConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -87,28 +90,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.33202615&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.33202615",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;GitIgnore&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "protobuf",
+      "GitIgnore"
     ],
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\avina\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\avina\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\avina\\AppData\\Local\\Symbols\\src&quot;
+    "rider.external.source.directories": [
+      "C:\\Users\\avina\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\avina\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\avina\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Discount.Grpc">
     <configuration name="Basket.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Basket/Basket.API/Basket.API.csproj" />
@@ -310,6 +314,10 @@
       <workItem from="1685091000711" duration="458000" />
       <workItem from="1685132934360" duration="1000000" />
       <workItem from="1685205133437" duration="1477000" />
+      <workItem from="1685207244537" duration="1911000" />
+      <workItem from="1685210165811" duration="464000" />
+      <workItem from="1685211027337" duration="1441000" />
+      <workItem from="1685216864476" duration="7548000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>
@@ -430,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685091137842</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="🚧(Discount.Grpc) : Added replication code of Discount.Api ,replication needs to removed">
+      <created>1685208003802</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1685208003802</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,7 +484,8 @@
     <MESSAGE value="✨(Enities-&gt; Coupon) : Added Entity Class Coupon" />
     <MESSAGE value="✨(Databaseconnection,DiscountRepository) : Added Data and Business Layer and also their Dependicies" />
     <MESSAGE value="(Discount.Grpc) : Created Discount Grpc Service Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="(Discount.Grpc) : Created Discount Grpc Service Project" />
+    <MESSAGE value="(Discount.Grpc) : Added replication code of Discount.Api ,replication needs to removed" />
+    <option name="LAST_COMMIT_MESSAGE" value="(Discount.Grpc) : Added replication code of Discount.Api ,replication needs to removed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -487,6 +503,12 @@
           </properties>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="DotNet Exception Breakpoints">
+          <properties exception="System.Net.Sockets.SocketException" isInternal="false" displayValue="SocketException" namespaceName="System.Net.Sockets">
+            <option name="internal" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="DotNet Exception Breakpoints" />

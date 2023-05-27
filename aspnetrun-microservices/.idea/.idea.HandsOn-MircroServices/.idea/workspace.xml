@@ -11,15 +11,15 @@
     <projectFile profileName="Discount.Grpc">src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="✨(Databaseconnection,DiscountRepository) : Added Data and Business Layer and also their Dependicies">
-      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Protos/greet.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Services/GreeterService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HandsOn-MircroServices.sln" beforeDir="false" afterPath="$PROJECT_DIR$/HandsOn-MircroServices.sln" afterDir="false" />
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🚧(Discount.Grpc) : Created Discount Grpc Service Project">
+      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Data/DatabaseConnection.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Data/IDbConnection.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Entities/Coupon.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Localization/Localizable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Repositories/DiscountRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Repositories/IDiscountRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +44,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70f617fc68cf47c4af27e06f2b56f801b1c8a8/54/0ba919a5/AsyncValueTaskMethodBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b27001fc3a3a410d8f2eeb5a8de7b2742d86a8/1d/2336526c/IDbConnection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c13f49990bf34d18b209c4f451026a97a226b0/f2/5c6ee142/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/12ce3c2b287b1deb85cf8b1d75df29b2d8ac68a7c562f093813f2d9e55e1b6f/ConfigureNamedOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2f10f2a1f3bbdbc3696823de50e6726ba2ae7f8cf2e6dfc487a9c0b8c1f7b4/ConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -108,7 +109,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected=".NET Launch Settings Profile.Discount.Grpc">
     <configuration name="Basket.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Basket/Basket.API/Basket.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -306,6 +307,9 @@
       <workItem from="1684443937074" duration="2479000" />
       <workItem from="1684865463096" duration="5879000" />
       <workItem from="1685048765904" duration="834000" />
+      <workItem from="1685091000711" duration="458000" />
+      <workItem from="1685132934360" duration="1000000" />
+      <workItem from="1685205133437" duration="1477000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>
@@ -419,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684019192587</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="🚧(Discount.Grpc) : Created Discount Grpc Service Project">
+      <created>1685091137842</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1685091137842</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,7 +468,8 @@
     <MESSAGE value="✨(Discount.Api) : Intialized Discount.API" />
     <MESSAGE value="✨(Enities-&gt; Coupon) : Added Entity Class Coupon" />
     <MESSAGE value="✨(Databaseconnection,DiscountRepository) : Added Data and Business Layer and also their Dependicies" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨(Databaseconnection,DiscountRepository) : Added Data and Business Layer and also their Dependicies" />
+    <MESSAGE value="(Discount.Grpc) : Created Discount Grpc Service Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="(Discount.Grpc) : Created Discount Grpc Service Project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

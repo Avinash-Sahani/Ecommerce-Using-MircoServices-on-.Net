@@ -1,6 +1,6 @@
 using Npgsql;
 
-namespace Discount.API.Data;
+namespace Discount.Grpc.Data;
 
 public interface IDbConnection
 {

@@ -13,6 +13,8 @@ builder.Services.AddGrpc();
 builder.Services.AddScoped<IDiscountRepository, DiscountRepository>();
 builder.Services.AddScoped<IDbConnection, DatabaseConnection>();
 
+
+builder.Services.AddAutoMapper(typeof(Program));
 var app = builder.Build();
 app.MigrateDatabase<Program>();
 // Configure the HTTP request pipeline.

@@ -11,15 +11,7 @@
     <projectFile profileName="Discount.Grpc">src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Mapper/DiscountProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Protos/discount.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Protos/discount.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Services/DiscountService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Services/DiscountService.cs" afterDir="false" />
-    </list>
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="✨(DiscountService,DiscountProfile): Added DiscountService and also added AutoMapper" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -316,6 +308,7 @@
       <workItem from="1685211027337" duration="1441000" />
       <workItem from="1685216864476" duration="11455000" />
       <workItem from="1685282052614" duration="1111000" />
+      <workItem from="1685283497533" duration="1125000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>
@@ -457,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685227945647</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="✨(DiscountService,DiscountProfile): Added DiscountService and also added AutoMapper">
+      <created>1685285940041</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1685285940041</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -499,7 +499,8 @@
     <MESSAGE value="(Discount.Grpc) : Added replication code of Discount.Api ,replication needs to removed" />
     <MESSAGE value="(discount.proto) : Wrote my first ever proto file, discount.proto" />
     <MESSAGE value="(DiscountService): intial implmentation of Discount.Service" />
-    <option name="LAST_COMMIT_MESSAGE" value="(DiscountService): intial implmentation of Discount.Service" />
+    <MESSAGE value="✨(DiscountService,DiscountProfile): Added DiscountService and also added AutoMapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨(DiscountService,DiscountProfile): Added DiscountService and also added AutoMapper" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -22,10 +22,13 @@ public static class HostExtension
                     @"Create Table IF NOT EXISTS Coupon(Id SERIAL PRIMARY KEY,ProductName VARCHAR(24) NOT NULL,Description TEXT , Amount INT)";
                 ExecuteSqlQuery(dbConnection, createTableQuery);
                 var insertDummayData = 
-                    $@"INSERT INTO Coupon (ProductName,Description,Amount) SELECT 'IPhone X', 'IPhone X Description',1500 WHERE NOT EXISTS (SELECT 1 FROM Coupon
-                WHERE ProductName = 'IPhoneX'
-                    );
-                ";
+                    $@"INSERT INTO Coupon (ProductName, Description, Amount)
+SELECT 'IPhone X', 'IPhone X Description', 1500
+WHERE NOT EXISTS (
+    SELECT 1 FROM Coupon
+    WHERE ProductName = 'IPhone X'
+);
+";
                 ExecuteSqlQuery(dbConnection,insertDummayData);
                 logger.LogInformation("Migration Succesful");
             }

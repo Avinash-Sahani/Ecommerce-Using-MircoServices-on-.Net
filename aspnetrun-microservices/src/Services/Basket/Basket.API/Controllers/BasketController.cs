@@ -1,5 +1,7 @@
+#nullable enable
 using System.Net;
 using Basket.API.Entities;
+using Basket.API.GrpcServices;
 using Basket.API.Repositories;
 using Catalog.API.Localization;
 using Microsoft.AspNetCore.Mvc;
@@ -11,9 +13,11 @@ namespace Basket.API.Controllers;
 public class BasketController : ControllerBase
 {
     private IBasketRepository BasketRepository { get; }
-    public BasketController(IBasketRepository basketRepository)
+    private DiscountGrpcService DiscountGrpcService { get; }
+    public BasketController(IBasketRepository basketRepository, DiscountGrpcService discountGrpcService)
     {
         BasketRepository = basketRepository ?? throw new ArgumentNullException(nameof(basketRepository));
+        DiscountGrpcService = discountGrpcService ?? throw  new ArgumentNullException(nameof(discountGrpcService));
     }
 
     
@@ -22,7 +26,18 @@ public class BasketController : ControllerBase
     public async Task<ActionResult<ShoppingCart?>> GetBasket(string username)
     {
        var basket =  await BasketRepository.GetBasket(username);
+       await ApplyDiscountCoupons();
        return Ok(basket ?? new ShoppingCart(username));
+
+        async Task ApplyDiscountCoupons()
+       {
+           if(basket == null) return;
+           foreach (var shoppingCartItem in basket?.Items!)
+           {
+               var coupon = await DiscountGrpcService.GetDiscountByProductName(shoppingCartItem.ProductName);
+               shoppingCartItem.Price -= coupon.Amount;
+           }
+       }
     }
 
     [HttpPut]

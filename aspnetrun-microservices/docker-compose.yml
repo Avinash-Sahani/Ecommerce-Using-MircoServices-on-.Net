@@ -45,6 +45,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - "Redis:CacheUrl=basketdb:6379,abortConnect=false"
+      - "GrpcSettings:DiscountUrl=http://discount.grpc"
     ports:
       - "8001:80"
     depends_on:
@@ -76,6 +77,19 @@ services:
     depends_on:
       - discountdb
     
+  discount.grpc:
+    build:
+      context: .
+      dockerfile: src/Services/Discount/Discount.Grpc/Dockerfile
+    container_name: discount.grpc
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "DatabaseSettings:ConnectionString=Server=discountdb;Port=5432;Database=DiscountDb;User Id=admin;Password=admin1234;"
+    ports:
+      - "8003:80"
+    depends_on:
+      - discountdb
+  
   pgadmin:
     image: dpage/pgadmin4
     container_name: pgadmin

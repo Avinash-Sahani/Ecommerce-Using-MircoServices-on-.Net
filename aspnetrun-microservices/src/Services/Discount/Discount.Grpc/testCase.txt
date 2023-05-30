@@ -1,0 +1,26 @@
+{
+  "username": "avinash",
+  "items": [
+    {
+      "quantity": 1,
+      "color": "red",
+      "price": 50000,
+      "productId": "75",
+      "productName": "ps4"
+    },
+    {
+      "quantity": 1,
+      "color": "red",
+      "price": 100000,
+      "productId": "73",
+      "productName": "Tv"
+    },
+    {
+      "quantity": 1,
+      "color": "red",
+      "price": 100000,
+      "productId": "71",
+      "productName": "IPhone X"
+    }
+  ]
+}

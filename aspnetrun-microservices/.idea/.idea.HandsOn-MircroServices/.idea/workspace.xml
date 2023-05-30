@@ -11,17 +11,11 @@
     <projectFile profileName="Discount.Grpc">src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🚧(BasketController,DiscountGrpcService) : Added DiscountGrpcService.cs and Add GetDiscount Method">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider-publish/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider-publish/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider-publish/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider-publish/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Basket/Basket.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.API/HostExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.API/HostExtension.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/HostExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/HostExtension.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Properties/launchSettings.json" afterDir="false" />
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🩹(basketController) : Fixed Grpc Call Issues">
+      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/testCase.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +107,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.Discount.Grpc">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="Basket.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile" temporary="true">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Basket/Basket.API/Basket.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -273,8 +267,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue=".NET Launch Settings Profile.Basket.API" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue=".NET Launch Settings Profile.Basket.API" />
         <item itemvalue="Docker.docker-compose.yml.discount.api: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.discount.api: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.discount.api: Compose Deployment" />
@@ -325,7 +319,7 @@
       <workItem from="1685475423148" duration="595000" />
       <workItem from="1685476507712" duration="1537000" />
       <workItem from="1685478180299" duration="2259000" />
-      <workItem from="1685480661360" duration="704000" />
+      <workItem from="1685480661360" duration="3596000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>
@@ -488,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685287738226</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="🩹(basketController) : Fixed Grpc Call Issues">
+      <created>1685481735724</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1685481735725</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,7 +545,8 @@
     <MESSAGE value="✨(DiscountService,DiscountProfile): Added DiscountService and also added AutoMapper" />
     <MESSAGE value="➕(Basket.Api) : Added Discount Grpc Service Depenedency in Basket.API" />
     <MESSAGE value="(BasketController,DiscountGrpcService) : Added DiscountGrpcService.cs and Add GetDiscount Method" />
-    <option name="LAST_COMMIT_MESSAGE" value="(BasketController,DiscountGrpcService) : Added DiscountGrpcService.cs and Add GetDiscount Method" />
+    <MESSAGE value="(basketController) : Fixed Grpc Call Issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="(basketController) : Fixed Grpc Call Issues" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

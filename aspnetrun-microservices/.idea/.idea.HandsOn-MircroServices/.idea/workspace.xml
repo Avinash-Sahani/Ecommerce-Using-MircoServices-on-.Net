@@ -13,9 +13,12 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🎨(Ordering): Added files  in Git">
-      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Ordering.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Ordering.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Ordering.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Ordering.Infrastructure.csproj" afterDir="false" />
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Domain/Common/EntityBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Domain/Common/ValueObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Domain/Class1.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -353,7 +356,8 @@
       <workItem from="1685478180299" duration="2259000" />
       <workItem from="1685480661360" duration="3596000" />
       <workItem from="1685652397001" duration="1650000" />
-      <workItem from="1685659142201" duration="1333000" />
+      <workItem from="1685659142201" duration="1892000" />
+      <workItem from="1685825278664" duration="802000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>
@@ -544,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685660322894</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="🎨(Ordering) : Added references between layers">
+      <created>1685660595837</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1685660595837</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,7 +588,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="(docker-compose): Pushed docker-compose" />
     <MESSAGE value="(Catalog.Api): Configuration Files" />
     <MESSAGE value="Added GitIgnore File" />
     <MESSAGE value=" (Basket.API) : Fixed Project structure" />
@@ -602,7 +612,8 @@
     <MESSAGE value="✨(Ordering.Api) : Intialized order api service" />
     <MESSAGE value="(Ordering.Api) : intialized domain ,application and infrastcture layers projects" />
     <MESSAGE value="(Ordering): Added files  in Git" />
-    <option name="LAST_COMMIT_MESSAGE" value="(Ordering): Added files  in Git" />
+    <MESSAGE value="(Ordering) : Added references between layers" />
+    <option name="LAST_COMMIT_MESSAGE" value="(Ordering) : Added references between layers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <Folder Include="Behaviours" />
-    <Folder Include="Contracts" />
     <Folder Include="Features" />
   </ItemGroup>
 

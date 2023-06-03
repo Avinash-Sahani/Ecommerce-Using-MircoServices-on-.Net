@@ -13,10 +13,10 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="✨(EntityBase,ValueObjects) : Added base Classes for entity and value">
-      <change afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Domain/Entities/Order.cs" afterDir="false" />
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="✨(features,behaviour,contracts): Added directories of sub layers">
+      <change afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Contracts/Persistence/IAsyncRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Contracts/Persistence/IOrderRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Class1.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Ordering.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Ordering.Application.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -356,7 +356,7 @@
       <workItem from="1685480661360" duration="3596000" />
       <workItem from="1685652397001" duration="1650000" />
       <workItem from="1685659142201" duration="1892000" />
-      <workItem from="1685825278664" duration="2098000" />
+      <workItem from="1685825278664" duration="3843000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>
@@ -561,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685826145489</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="✨(features,behaviour,contracts): Added directories of sub layers">
+      <created>1685827544975</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1685827544975</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,7 +601,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added GitIgnore File" />
     <MESSAGE value=" (Basket.API) : Fixed Project structure" />
     <MESSAGE value="(Basket.Api) : Added Entities ShoppingCart.cs and ShoppingCartItem.cs" />
     <MESSAGE value="(Basket.API) : Added Redis Package in Basket Api" />
@@ -619,7 +625,8 @@
     <MESSAGE value="(Ordering): Added files  in Git" />
     <MESSAGE value="(Ordering) : Added references between layers" />
     <MESSAGE value="✨(EntityBase,ValueObjects) : Added base Classes for entity and value" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨(EntityBase,ValueObjects) : Added base Classes for entity and value" />
+    <MESSAGE value="✨(features,behaviour,contracts): Added directories of sub layers" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨(features,behaviour,contracts): Added directories of sub layers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

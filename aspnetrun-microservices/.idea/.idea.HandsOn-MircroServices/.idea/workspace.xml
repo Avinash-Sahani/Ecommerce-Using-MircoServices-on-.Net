@@ -13,10 +13,10 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="✨(IAsyncRepository,IOrderReposistory) : Defined Interafaces of Repository">
-      <change afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Contracts/Infrastructure/IEmailService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Models/Email.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Models/EmailSettings.cs" afterDir="false" />
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="✨(CheckOutCommandValidator) : Added Validation in CheckOutCommandValidator">
+      <change afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Features/Orders/Queries/GetOrdersList/GetOrderListCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Features/Orders/Queries/GetOrdersList/GetOrdersListQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Features/Orders/Queries/GetOrdersList/GetOrdersListQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Features/Orders/Queries/GetOrdersList/GetOrdersListQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Features/Orders/Queries/GetOrdersList/GetOrdersListQueryHandler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +43,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70f617fc68cf47c4af27e06f2b56f801b1c8a8/54/0ba919a5/AsyncValueTaskMethodBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b27001fc3a3a410d8f2eeb5a8de7b2742d86a8/1d/2336526c/IDbConnection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bb7b8e9f82ee4cc296a57aef759a3b4b145000/ef/dd800da9/NpgsqlConnection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c11a2aa831d04e8eba36f4248c870ea110e00/ca/ecee36a1/IRequestHandler`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c13f49990bf34d18b209c4f451026a97a226b0/f2/5c6ee142/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/12ce3c2b287b1deb85cf8b1d75df29b2d8ac68a7c562f093813f2d9e55e1b6f/ConfigureNamedOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2f10f2a1f3bbdbc3696823de50e6726ba2ae7f8cf2e6dfc487a9c0b8c1f7b4/ConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -72,6 +73,8 @@
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Repositories/IBasketRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Data/ICatalogContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Release/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/avina/RiderProjects/MicroServices-Ecommerce/aspnetrun-microservices/src/Services/Ordering/Ordering.Application/Features/Orders/Queries/GetOrdersList/GetOrdersListQuery.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/avina/RiderProjects/MicroServices-Ecommerce/aspnetrun-microservices/src/Services/Ordering/Ordering.Application/Features/Orders/Queries/GetOrdersList/GetOrdersListQuery.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -85,29 +88,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.33202615&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TODO_SCOPE": "All Places",
+    "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.33202615",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;protobuf&quot;,
-      &quot;GitIgnore&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "protobuf",
+      "GitIgnore"
     ],
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\avina\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\avina\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\avina\\AppData\\Local\\Symbols\\src&quot;
+    "rider.external.source.directories": [
+      "C:\\Users\\avina\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\avina\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\avina\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="Basket.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile" temporary="true">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Basket/Basket.API/Basket.API.csproj" />
@@ -356,6 +360,7 @@
       <workItem from="1685652397001" duration="1650000" />
       <workItem from="1685659142201" duration="1892000" />
       <workItem from="1685825278664" duration="4246000" />
+      <workItem from="1685893664771" duration="14041000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>
@@ -574,7 +579,28 @@
       <option name="project" value="LOCAL" />
       <updated>1685830377935</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="🎨(GetOrderListQuery,GetOrderListQueryHandler) : Added GetOrderList Query">
+      <created>1685908805624</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1685908805624</updated>
+    </task>
+    <task id="LOCAL-00033" summary="✨(CheckoutCommandHandler,CheckOutOrderCommand): Added Checkoutcommand">
+      <created>1685912289901</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1685912289901</updated>
+    </task>
+    <task id="LOCAL-00034" summary="✨(CheckOutCommandValidator) : Added Validation in CheckOutCommandValidator">
+      <created>1685913358320</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1685913358320</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -607,9 +633,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="(Basket.Api) : Added Entities ShoppingCart.cs and ShoppingCartItem.cs" />
-    <MESSAGE value="(Basket.API) : Added Redis Package in Basket Api" />
-    <MESSAGE value="✨(Program.cs) : Added Redis Service on Startup" />
     <MESSAGE value="✨(BasketController) : Implemented Basket Controller" />
     <MESSAGE value="✨(appsettings.json) : Fix conncetion issues" />
     <MESSAGE value="(docker-compose.yml) : Moved docker-compose from catalog.api" />
@@ -632,7 +655,10 @@
     <MESSAGE value="✨(EntityBase,ValueObjects) : Added base Classes for entity and value" />
     <MESSAGE value="✨(features,behaviour,contracts): Added directories of sub layers" />
     <MESSAGE value="✨(IAsyncRepository,IOrderReposistory) : Defined Interafaces of Repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨(IAsyncRepository,IOrderReposistory) : Defined Interafaces of Repository" />
+    <MESSAGE value="(GetOrderListQuery,GetOrderListQueryHandler) : Added GetOrderList Query" />
+    <MESSAGE value="✨(CheckoutCommandHandler,CheckOutOrderCommand): Added Checkoutcommand" />
+    <MESSAGE value="✨(CheckOutCommandValidator) : Added Validation in CheckOutCommandValidator" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨(CheckOutCommandValidator) : Added Validation in CheckOutCommandValidator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

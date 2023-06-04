@@ -5,7 +5,7 @@ using Ordering.Domain.Entities;
 
 namespace Ordering.Application.Features.Orders.Queries.GetOrdersList;
 
-public class GetOrdersListQueryHandler : IRequestHandler<GetOrdersListQuery, IEnumerable<Order>>
+public class GetOrdersListQueryHandler : IRequestHandler<GetOrdersListQuery,List<GetOrderResponse>>
 {
     private IOrderRepository Repository { get; }
 
@@ -14,10 +14,13 @@ public class GetOrdersListQueryHandler : IRequestHandler<GetOrdersListQuery, IEn
         Repository = repository;
 
     }
-    
-    public async Task<IEnumerable<Order>> Handle(GetOrdersListQuery request, CancellationToken cancellationToken)
+
+
+    public async Task<List<GetOrderResponse>> Handle(GetOrdersListQuery request, CancellationToken cancellationToken)
     {
-        return await Repository.GetOrdersByUsername(request.UserName);
+        var orders = await Repository.GetOrdersByUsername(request.UserName);
+        var getOrdersList = new GetOrdersList(orders).OrderList;
+        return getOrdersList;
     }
 }
 

@@ -3,7 +3,7 @@ using Ordering.Domain.Entities;
 
 namespace Ordering.Application.Features.Orders.Queries.GetOrdersList;
 
-public class GetOrdersListQuery : IRequest<List<GetOrderResponse>>
+public class GetOrdersListQuery : IRequest<List<GetOrderRequest>>
 {
     public string UserName { get; set; }
 

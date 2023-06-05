@@ -2,9 +2,9 @@ using Ordering.Domain.Entities;
 
 namespace Ordering.Application.Features.Orders.Queries.GetOrdersList;
 
-public class GetOrderResponse
+public class GetOrderRequest
 {
-    public GetOrderResponse(Order order)
+    public GetOrderRequest(Order order)
     {
         Order = order;
     }

@@ -13,10 +13,11 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🧵(RepositoryBase) : Implemented all IAsyncRepository Methods in Repo base class">
-      <change afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Persistance/OrderRepository.cs" afterDir="false" />
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="✨(OrderRepository) : Created Order Repository and implement OrderImplmentation">
+      <change afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Mail/EmailService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Persistance/RepositoryBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Persistance/RepositoryBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Ordering.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Ordering.Infrastructure.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70f617fc68cf47c4af27e06f2b56f801b1c8a8/54/0ba919a5/AsyncValueTaskMethodBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7c02fbb146794ad3b2b124c50fe165fc13200/34/a449532c/EmailAddress.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b27001fc3a3a410d8f2eeb5a8de7b2742d86a8/1d/2336526c/IDbConnection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bb7b8e9f82ee4cc296a57aef759a3b4b145000/ef/dd800da9/NpgsqlConnection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c11a2aa831d04e8eba36f4248c870ea110e00/ca/ecee36a1/IRequestHandler`1.cs" root0="SKIP_HIGHLIGHTING" />
@@ -367,7 +369,7 @@
       <workItem from="1685825278664" duration="4246000" />
       <workItem from="1685893664771" duration="16562000" />
       <workItem from="1685987140085" duration="396000" />
-      <workItem from="1686079043577" duration="8400000" />
+      <workItem from="1686079043577" duration="10377000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>
@@ -628,7 +630,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686087995509</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="✨(OrderRepository) : Created Order Repository and implement OrderImplmentation">
+      <created>1686089179594</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1686089179594</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -661,7 +670,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Just Checking Everyyhing is Working Fine" />
     <MESSAGE value="✨(Discount.Api) : Intialized Discount.API" />
     <MESSAGE value="✨(Enities-&gt; Coupon) : Added Entity Class Coupon" />
     <MESSAGE value="✨(Databaseconnection,DiscountRepository) : Added Data and Business Layer and also their Dependicies" />
@@ -686,7 +694,8 @@
     <MESSAGE value="♻️(GetOrderlistQuery*) :perfrom Refactoring in Response Model" />
     <MESSAGE value="(OrderContext ,OrderContextSeed) : Addded OrderContext class and orderContext" />
     <MESSAGE value="(RepositoryBase) : Implemented all IAsyncRepository Methods in Repo base class" />
-    <option name="LAST_COMMIT_MESSAGE" value="(RepositoryBase) : Implemented all IAsyncRepository Methods in Repo base class" />
+    <MESSAGE value="✨(OrderRepository) : Created Order Repository and implement OrderImplmentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨(OrderRepository) : Created Order Repository and implement OrderImplmentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

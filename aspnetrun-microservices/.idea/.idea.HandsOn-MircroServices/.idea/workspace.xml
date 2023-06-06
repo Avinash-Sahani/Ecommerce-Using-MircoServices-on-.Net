@@ -13,11 +13,10 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🔧(OrderContext ,OrderContextSeed) : Addded OrderContext class and orderContext">
-      <change afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Persistance/RepositoryBase.cs" afterDir="false" />
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🧵(RepositoryBase) : Implemented all IAsyncRepository Methods in Repo base class">
+      <change afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Persistance/OrderRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Persistance/OrderContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Persistance/OrderContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Persistance/OrderContextSeed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Persistance/OrderContextSeed.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Persistance/RepositoryBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Persistance/RepositoryBase.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +79,7 @@
     <setting file="file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Exceptions/NotFoundException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Features/Orders/Commands/DeleteOrder/DeleteOrderCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Features/Orders/Queries/GetOrdersList/GetOrdersReponseList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/avina/RiderProjects/MicroServices-Ecommerce/aspnetrun-microservices/src/Services/Ordering/Ordering.Infrastructure/Persistance/OrderContext.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -367,7 +367,7 @@
       <workItem from="1685825278664" duration="4246000" />
       <workItem from="1685893664771" duration="16562000" />
       <workItem from="1685987140085" duration="396000" />
-      <workItem from="1686079043577" duration="6589000" />
+      <workItem from="1686079043577" duration="8400000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>
@@ -621,7 +621,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686083908973</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="🧵(RepositoryBase) : Implemented all IAsyncRepository Methods in Repo base class">
+      <created>1686087995509</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1686087995509</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -654,7 +661,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="(docker-compose.yml) : Moved docker-compose from catalog.api" />
     <MESSAGE value="Just Checking Everyyhing is Working Fine" />
     <MESSAGE value="✨(Discount.Api) : Intialized Discount.API" />
     <MESSAGE value="✨(Enities-&gt; Coupon) : Added Entity Class Coupon" />
@@ -679,7 +685,8 @@
     <MESSAGE value="✨(CheckOutCommandValidator) : Added Validation in CheckOutCommandValidator" />
     <MESSAGE value="♻️(GetOrderlistQuery*) :perfrom Refactoring in Response Model" />
     <MESSAGE value="(OrderContext ,OrderContextSeed) : Addded OrderContext class and orderContext" />
-    <option name="LAST_COMMIT_MESSAGE" value="(OrderContext ,OrderContextSeed) : Addded OrderContext class and orderContext" />
+    <MESSAGE value="(RepositoryBase) : Implemented all IAsyncRepository Methods in Repo base class" />
+    <option name="LAST_COMMIT_MESSAGE" value="(RepositoryBase) : Implemented all IAsyncRepository Methods in Repo base class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

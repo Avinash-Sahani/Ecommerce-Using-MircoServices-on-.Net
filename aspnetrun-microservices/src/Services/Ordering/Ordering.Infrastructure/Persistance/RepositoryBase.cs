@@ -7,8 +7,8 @@ namespace Ordering.Infrastructure.Persistance;
 
 public class RepositoryBase<T> : IAsyncRepository<T> where T : EntityBase
 {
-    private readonly OrderContext _dbContext;
-    private DbSet<T> _dbSet{ get; set; }
+    protected readonly OrderContext _dbContext;
+    protected DbSet<T> _dbSet{ get; set; }
 
     public RepositoryBase(OrderContext dbContext)
     {

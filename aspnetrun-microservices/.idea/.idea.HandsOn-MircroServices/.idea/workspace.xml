@@ -13,11 +13,11 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="✨(OrderRepository) : Created Order Repository and implement OrderImplmentation">
-      <change afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Mail/EmailService.cs" afterDir="false" />
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="✨(EmailService) : Added Email Feature to send email when order placed">
+      <change afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/InfrastructureServiceRegistration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Ordering.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Ordering.Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Class1.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -369,7 +369,7 @@
       <workItem from="1685825278664" duration="4246000" />
       <workItem from="1685893664771" duration="16562000" />
       <workItem from="1685987140085" duration="396000" />
-      <workItem from="1686079043577" duration="10377000" />
+      <workItem from="1686079043577" duration="12251000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>
@@ -637,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686089179594</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="✨(EmailService) : Added Email Feature to send email when order placed">
+      <created>1686092051425</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1686092051425</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,7 +677,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="✨(Discount.Api) : Intialized Discount.API" />
     <MESSAGE value="✨(Enities-&gt; Coupon) : Added Entity Class Coupon" />
     <MESSAGE value="✨(Databaseconnection,DiscountRepository) : Added Data and Business Layer and also their Dependicies" />
     <MESSAGE value="(Discount.Grpc) : Created Discount Grpc Service Project" />
@@ -695,7 +701,8 @@
     <MESSAGE value="(OrderContext ,OrderContextSeed) : Addded OrderContext class and orderContext" />
     <MESSAGE value="(RepositoryBase) : Implemented all IAsyncRepository Methods in Repo base class" />
     <MESSAGE value="✨(OrderRepository) : Created Order Repository and implement OrderImplmentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨(OrderRepository) : Created Order Repository and implement OrderImplmentation" />
+    <MESSAGE value="✨(EmailService) : Added Email Feature to send email when order placed" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨(EmailService) : Added Email Feature to send email when order placed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

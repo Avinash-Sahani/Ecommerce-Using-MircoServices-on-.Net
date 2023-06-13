@@ -13,11 +13,13 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="✨(Program.CS) : Added Application and Infrastructure layer dependices in Presentation Layer">
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🔨(ApplicaitonServiceRegistartion,Migration) : Fixed Mediatr Isuue and Run Intital Migration">
+      <change afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/Extensions/HostExtension.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/Ordering.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/Ordering.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Ordering.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Ordering.Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +43,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/025e77837d8c4e0699f6e06ef02270d718e5e0/7e/227b2ea4/DbConnectionOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70f617fc68cf47c4af27e06f2b56f801b1c8a8/54/0ba919a5/AsyncValueTaskMethodBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7c02fbb146794ad3b2b124c50fe165fc13200/34/a449532c/EmailAddress.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b27001fc3a3a410d8f2eeb5a8de7b2742d86a8/1d/2336526c/IDbConnection.cs" root0="SKIP_HIGHLIGHTING" />
@@ -61,9 +64,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/50245137e992c658ce9f9f5fa1d238ff075ad58ef9acb8b123992aa68ce9f/Throw.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/575c31ecc35a636b6f962cb71d53992552941a18982aae1c8e6c16305cc3761b/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/73f58a70a76e491eb4bcf9d90ef5628b378a8/_8ad91/HttpStatusCode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76d612d12f53dc8b9f997548c29cc61e922a1f61c80d192a45c3cecdff7/SqlServerDatabaseCreator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7df7da5b32d9ba52a4065e8e7546f391a2ae3d8cd3753c3cc254f332faf6d/DeleteResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8720c577beee5a5b715d8968d9151d59fa406faa7694c4e5486dfa908541ba23/Dns.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8afd6870c47fcf36d178e7775a26ed527416b2ae9996d81422b0f0ac26d03d/ConfigurationOptions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/95c148312c579a19e8b216a7781af868f571d0f4b6294e5310fc981a2bbb5d1/RelationalConnection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9a681c729aca2ccbcfe4f9949c066d9bff4aac0b76afb62deee3ebffd93ab5e/DistributedCacheExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9e86c3ea3ae433bc7c87cfb655f15d439c9e4a23166e4f22bb595d9df620b1/IDistributedCache.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a928d32776b965fad37de1e32a13705f8ee6c9e4abebc72bdca133f0fdc9b0/ReplaceOptions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -81,7 +86,6 @@
     <setting file="file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Exceptions/NotFoundException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Features/Orders/Commands/DeleteOrder/DeleteOrderCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Features/Orders/Queries/GetOrdersList/GetOrdersReponseList.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/avina/RiderProjects/MicroServices-Ecommerce/aspnetrun-microservices/src/Services/Ordering/Ordering.Infrastructure/Persistance/OrderContext.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -102,7 +106,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.33202615&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.33211008&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -119,7 +123,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected=".NET Launch Settings Profile.Ordering.API">
     <configuration name="Basket.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile" temporary="true">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Basket/Basket.API/Basket.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -370,6 +374,9 @@
       <workItem from="1685893664771" duration="16562000" />
       <workItem from="1685987140085" duration="396000" />
       <workItem from="1686079043577" duration="13194000" />
+      <workItem from="1686168391067" duration="3092000" />
+      <workItem from="1686172024135" duration="3551000" />
+      <workItem from="1686689062254" duration="2998000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>
@@ -658,7 +665,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686094008976</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="🔨(ApplicaitonServiceRegistartion,Migration) : Fixed Mediatr Isuue and Run Intital Migration">
+      <created>1686168812354</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1686168812354</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -691,7 +705,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="(Discount.Grpc) : Created Discount Grpc Service Project" />
     <MESSAGE value="(Discount.Grpc) : Added replication code of Discount.Api ,replication needs to removed" />
     <MESSAGE value="(discount.proto) : Wrote my first ever proto file, discount.proto" />
     <MESSAGE value="(DiscountService): intial implmentation of Discount.Service" />
@@ -716,7 +729,8 @@
     <MESSAGE value="✨(EmailService) : Added Email Feature to send email when order placed" />
     <MESSAGE value="✨(InfrastructureServiceRegistration) : Added InfrastructureServiceRegistration and applied dependecy injections" />
     <MESSAGE value="✨(Program.CS) : Added Application and Infrastructure layer dependices in Presentation Layer" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨(Program.CS) : Added Application and Infrastructure layer dependices in Presentation Layer" />
+    <MESSAGE value="(ApplicaitonServiceRegistartion,Migration) : Fixed Mediatr Isuue and Run Intital Migration" />
+    <option name="LAST_COMMIT_MESSAGE" value="(ApplicaitonServiceRegistartion,Migration) : Fixed Mediatr Isuue and Run Intital Migration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -746,6 +760,45 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Services/Ordering/Ordering.API/Extensions/HostExtension.cs</url>
+          <line>11</line>
+          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Ordering\Ordering.API\Extensions\HostExtension.cs" initialLine="11" containingFunctionPresentation="method 'MigrateDatabase'">
+            <startOffsets>
+              <option value="420" />
+            </startOffsets>
+            <endOffsets>
+              <option value="460" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Services/Ordering/Ordering.API/Extensions/HostExtension.cs</url>
+          <line>45</line>
+          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Ordering\Ordering.API\Extensions\HostExtension.cs" initialLine="45" containingFunctionPresentation="method 'InvokeSeeder'">
+            <startOffsets>
+              <option value="1888" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1916" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/InfrastructureServiceRegistration.cs</url>
+          <line>15</line>
+          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Ordering\Ordering.Infrastructure\InfrastructureServiceRegistration.cs" initialLine="15" containingFunctionPresentation="method 'AddInfrastructureServices'">
+            <startOffsets>
+              <option value="578" />
+            </startOffsets>
+            <endOffsets>
+              <option value="722" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <breakpoint enabled="true" type="DotNet Exception Breakpoints">
           <properties exception="System.Net.Sockets.SocketException" isInternal="false" displayValue="SocketException" namespaceName="System.Net.Sockets">

@@ -12,6 +12,6 @@ public class OrderRepository : RepositoryBase<Order>,IOrderRepository
 
     public async Task<IEnumerable<Order>> GetOrdersByUsername(string username)
     {
-        return await _dbContext.Orders.Where(order => (order.UserName ?? new string(string.Empty) ).Equals(username)).ToListAsync();
+        return await _dbContext.Orders.Where(order => order.UserName.Equals(username)).ToListAsync();
     }
 }

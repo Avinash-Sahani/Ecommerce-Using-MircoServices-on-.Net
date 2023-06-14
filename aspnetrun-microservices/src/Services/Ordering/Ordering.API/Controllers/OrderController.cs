@@ -9,6 +9,9 @@ using Ordering.Domain.Entities;
 
 namespace Ordering.API.Controllers;
 
+[ApiController]
+[Route("api/v1/[controller]")]
+
 public class OrderController : ControllerBase
 {
     private readonly IMediator _mediator;
@@ -16,18 +19,17 @@ public class OrderController : ControllerBase
     {
         _mediator = mediator;
     }
-    [HttpGet("{userName}",Name = "GetOrder")]
-    [ProducesResponseType(typeof(IEnumerable<Order>),(int) HttpStatusCode.OK)]
-
-    public async Task<ActionResult<IEnumerable<Order>>> GetOrderByUsername([FromQuery] string username)
+    [HttpGet("{userName}", Name = "GetOrder")]
+    [ProducesResponseType(typeof(IEnumerable<Order>), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IEnumerable<Order>>> GetOrdersByUserName(string userName)
     {
 
-        var query = new GetOrdersListQuery(username);
+        var query = new GetOrdersListQuery(userName);
         var orders = await _mediator.Send(query);
         return Ok(orders);
     }
 
-    [HttpPost(Name = "CheckOuOrder")]
+    [HttpPost(Name = "CheckOutOrder")]
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<int>> CheckoutOrder([FromBody] CheckOutOrderCommand command)
     {
@@ -51,7 +53,7 @@ public class OrderController : ControllerBase
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesDefaultResponseType]
 
-    public async Task<ActionResult> DeleteOrder([FromQuery] int id)
+    public async Task<ActionResult> DeleteOrder(int id)
     {
         var deleteCommand = new DeleteOrderCommand(id);
         var result = await _mediator.Send(deleteCommand);

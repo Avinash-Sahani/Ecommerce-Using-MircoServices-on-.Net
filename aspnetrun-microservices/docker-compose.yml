@@ -120,6 +120,18 @@ services:
     restart: always
     ports:
       - "1433:1433"
+  order.api:
+    container_name: ordering.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings:OrderingConnectionString=Server=orderdb;Database=OrderDb;User Id=sa;Password=SwN12345678; TrustServerCertificate=True;"
+    build:
+      context: .
+      dockerfile: src/Services/Ordering/Ordering.API/Dockerfile
+    depends_on:
+      - orderdb
+    ports:
+      - "8004:80"
   
 volumes:
   mongo_data:

@@ -13,10 +13,12 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🔨(ApplicaitonServiceRegistartion,Migration) : Fixed Mediatr Isuue and Run Intital Migration">
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="✨(docker-compose) : Added Rabbit Mq image in docker compose">
+      <change afterPath="$PROJECT_DIR$/src/BuildingBlocks/EventBus.Messages/EventBus.Messages.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BuildingBlocks/EventBus.Messages/Events/BasketCheckOutEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BuildingBlocks/EventBus.Messages/Events/IntegrationBaseEvent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HandsOn-MircroServices.sln" beforeDir="false" afterPath="$PROJECT_DIR$/HandsOn-MircroServices.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +124,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected=".NET Launch Settings Profile.Discount.Grpc">
     <configuration name="Basket.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile" temporary="true">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Basket/Basket.API/Basket.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -377,7 +379,7 @@
       <workItem from="1686172024135" duration="3551000" />
       <workItem from="1686689062254" duration="2998000" />
       <workItem from="1686769575585" duration="8097000" />
-      <workItem from="1689501075854" duration="6329000" />
+      <workItem from="1689501075854" duration="10950000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>
@@ -673,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686168812354</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="✨(docker-compose) : Added Rabbit Mq image in docker compose">
+      <created>1689530857635</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1689530857635</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -706,7 +715,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="(Discount.Grpc) : Added replication code of Discount.Api ,replication needs to removed" />
     <MESSAGE value="(discount.proto) : Wrote my first ever proto file, discount.proto" />
     <MESSAGE value="(DiscountService): intial implmentation of Discount.Service" />
     <MESSAGE value="✨(DiscountService,DiscountProfile): Added DiscountService and also added AutoMapper" />
@@ -731,7 +739,8 @@
     <MESSAGE value="✨(InfrastructureServiceRegistration) : Added InfrastructureServiceRegistration and applied dependecy injections" />
     <MESSAGE value="✨(Program.CS) : Added Application and Infrastructure layer dependices in Presentation Layer" />
     <MESSAGE value="(ApplicaitonServiceRegistartion,Migration) : Fixed Mediatr Isuue and Run Intital Migration" />
-    <option name="LAST_COMMIT_MESSAGE" value="(ApplicaitonServiceRegistartion,Migration) : Fixed Mediatr Isuue and Run Intital Migration" />
+    <MESSAGE value="✨(docker-compose) : Added Rabbit Mq image in docker compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨(docker-compose) : Added Rabbit Mq image in docker compose" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

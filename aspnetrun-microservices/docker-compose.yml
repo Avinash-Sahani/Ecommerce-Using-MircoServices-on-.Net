@@ -132,9 +132,19 @@ services:
       - orderdb
     ports:
       - "8004:80"
-  
+  rabbitmq:
+    container_name: rabbitmq
+    image : rabbitmq:3.12-rc-management-alpine
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=password
 volumes:
   mongo_data:
   portainer_data:
   postgres_data:  
   pgadmin_data:
+  rabbitmq_data:
+    

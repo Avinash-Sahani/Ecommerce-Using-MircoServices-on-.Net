@@ -13,12 +13,10 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="✨(docker-compose) : Added Rabbit Mq image in docker compose">
-      <change afterPath="$PROJECT_DIR$/src/BuildingBlocks/EventBus.Messages/EventBus.Messages.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BuildingBlocks/EventBus.Messages/Events/BasketCheckOutEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BuildingBlocks/EventBus.Messages/Events/IntegrationBaseEvent.cs" afterDir="false" />
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🎨(BasketCheckoutEvent,EventBus.Messages,IntegrationBaseEvent) : Add Event Bus project and also created Intergratiom Base Event class">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HandsOn-MircroServices.sln" beforeDir="false" afterPath="$PROJECT_DIR$/HandsOn-MircroServices.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Basket.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Basket.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -379,7 +377,7 @@
       <workItem from="1686172024135" duration="3551000" />
       <workItem from="1686689062254" duration="2998000" />
       <workItem from="1686769575585" duration="8097000" />
-      <workItem from="1689501075854" duration="10950000" />
+      <workItem from="1689501075854" duration="11787000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>
@@ -682,7 +680,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689530857635</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="🎨(BasketCheckoutEvent,EventBus.Messages,IntegrationBaseEvent) : Add Event Bus project and also created Intergratiom Base Event class">
+      <created>1689538586661</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1689538586661</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -715,7 +720,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="(discount.proto) : Wrote my first ever proto file, discount.proto" />
     <MESSAGE value="(DiscountService): intial implmentation of Discount.Service" />
     <MESSAGE value="✨(DiscountService,DiscountProfile): Added DiscountService and also added AutoMapper" />
     <MESSAGE value="➕(Basket.Api) : Added Discount Grpc Service Depenedency in Basket.API" />
@@ -740,7 +744,8 @@
     <MESSAGE value="✨(Program.CS) : Added Application and Infrastructure layer dependices in Presentation Layer" />
     <MESSAGE value="(ApplicaitonServiceRegistartion,Migration) : Fixed Mediatr Isuue and Run Intital Migration" />
     <MESSAGE value="✨(docker-compose) : Added Rabbit Mq image in docker compose" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨(docker-compose) : Added Rabbit Mq image in docker compose" />
+    <MESSAGE value="(BasketCheckoutEvent,EventBus.Messages,IntegrationBaseEvent) : Add Event Bus project and also created Intergratiom Base Event class" />
+    <option name="LAST_COMMIT_MESSAGE" value="(BasketCheckoutEvent,EventBus.Messages,IntegrationBaseEvent) : Add Event Bus project and also created Intergratiom Base Event class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

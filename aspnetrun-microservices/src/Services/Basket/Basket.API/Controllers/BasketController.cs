@@ -4,6 +4,7 @@ using Basket.API.Entities;
 using Basket.API.GrpcServices;
 using Basket.API.Repositories;
 using Catalog.API.Localization;
+using EventBus.Messages.Events;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
 
@@ -57,8 +58,7 @@ public class BasketController : ControllerBase
         return isDeleted ? Ok(isDeleted) : NotFound(isDeleted);
     }
 
+  //  public async Task<IActionResult> Checkout([FromBody] BasketCheck a)
 
-    
-    
-    
+
 }

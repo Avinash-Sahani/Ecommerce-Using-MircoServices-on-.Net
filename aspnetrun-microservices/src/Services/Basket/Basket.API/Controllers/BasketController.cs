@@ -5,6 +5,7 @@ using Basket.API.GrpcServices;
 using Basket.API.Repositories;
 using Catalog.API.Localization;
 using EventBus.Messages.Events;
+using MassTransit;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
 
@@ -15,10 +16,13 @@ public class BasketController : ControllerBase
 {
     private IBasketRepository BasketRepository { get; }
     private DiscountGrpcService DiscountGrpcService { get; }
-    public BasketController(IBasketRepository basketRepository, DiscountGrpcService discountGrpcService)
+
+    private readonly IPublishEndpoint PublishEndpoint;
+    public BasketController(IBasketRepository basketRepository, DiscountGrpcService discountGrpcService,IPublishEndpoint endpoint)
     {
         BasketRepository = basketRepository ?? throw new ArgumentNullException(nameof(basketRepository));
         DiscountGrpcService = discountGrpcService ?? throw  new ArgumentNullException(nameof(discountGrpcService));
+        PublishEndpoint = endpoint ?? throw new ArgumentNullException(nameof(endpoint));
     }
 
     
@@ -26,25 +30,29 @@ public class BasketController : ControllerBase
     [ProducesResponseType(typeof(ShoppingCart),(int)HttpStatusCode.OK)]
     public async Task<ActionResult<ShoppingCart?>> GetBasket(string username)
     {
-       var basket =  await BasketRepository.GetBasket(username);
-       await ApplyDiscountCoupons();
-       return Ok(basket ?? new ShoppingCart(username));
+        var basket = await GetBasketFromRepository(username);
+        return Ok(basket ?? new ShoppingCart(username));
+    }
 
-        async Task ApplyDiscountCoupons()
-       {
-           if(basket == null) return;
-           foreach (var shoppingCartItem in basket?.Items!)
-           {
-               var coupon = await DiscountGrpcService.GetDiscountByProductName(shoppingCartItem.ProductName);
-               shoppingCartItem.Price -= coupon.Amount;
-           }
-       }
+    private async Task<ShoppingCart?> GetBasketFromRepository(string username)
+    {
+        var basket = await BasketRepository.GetBasket(username);
+        return basket;
     }
 
     [HttpPut]
     [ProducesResponseType(typeof(ShoppingCart),(int)HttpStatusCode.OK)]
     public async Task<ActionResult<ShoppingCart>> UpdateBasket([FromBody] ShoppingCart cart)
     {
+        async Task ApplyDiscountCoupons()
+        {
+           
+            foreach (var shoppingCartItem in cart?.Items!)
+            {
+                var coupon = await DiscountGrpcService.GetDiscountByProductName(shoppingCartItem.ProductName);
+                shoppingCartItem.Price -= coupon.Amount;
+            }
+        }
         
         return Ok(await BasketRepository.UpdateBasket(cart));
     }
@@ -58,7 +66,24 @@ public class BasketController : ControllerBase
         return isDeleted ? Ok(isDeleted) : NotFound(isDeleted);
     }
 
-  //  public async Task<IActionResult> Checkout([FromBody] BasketCheck a)
+ 
+    [Route("[action]")]
+    [HttpPost]
+    [ProducesResponseType((int)HttpStatusCode.Accepted)]
+    [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+    public async Task<IActionResult> Checkout([FromBody] BasketCheckOutEvent basketCheckout)
+    {
+        var username = basketCheckout?.UserName;
+        if (string.IsNullOrEmpty(username?.Trim()))
+            throw new ArgumentException(nameof(username));
+        var currentBasket = await GetBasketFromRepository(basketCheckout?.UserName ?? string.Empty);
+        if (currentBasket == null)
+            return BadRequest();
+        
+        PublishEndpoint?.Publish(currentBasket);
+        await BasketRepository.DeleteBasket(username);
+        return Accepted();
+    }
 
 
 }

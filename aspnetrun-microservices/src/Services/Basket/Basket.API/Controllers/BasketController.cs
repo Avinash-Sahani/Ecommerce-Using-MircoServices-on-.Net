@@ -44,6 +44,11 @@ public class BasketController : ControllerBase
     [ProducesResponseType(typeof(ShoppingCart),(int)HttpStatusCode.OK)]
     public async Task<ActionResult<ShoppingCart>> UpdateBasket([FromBody] ShoppingCart cart)
     {
+      
+
+        await ApplyDiscountCoupons();
+        return Ok(await BasketRepository.UpdateBasket(cart));
+        
         async Task ApplyDiscountCoupons()
         {
            
@@ -53,8 +58,6 @@ public class BasketController : ControllerBase
                 shoppingCartItem.Price -= coupon.Amount;
             }
         }
-        
-        return Ok(await BasketRepository.UpdateBasket(cart));
     }
    
     [HttpDelete("{username}")]

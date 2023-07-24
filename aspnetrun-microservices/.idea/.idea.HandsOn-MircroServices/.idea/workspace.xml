@@ -13,15 +13,7 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🚧(InfrastructureServiceRegistration) : Fixed endpoints issue">
-      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Basket.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Basket.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/Ordering.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/Ordering.API.csproj" afterDir="false" />
-    </list>
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🚧(Basket.Api,Order.Api) : Update Docker Files and changes in docker-compose" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -151,7 +143,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Docker.Basket.API/Dockerfile">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="Basket.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile" temporary="true">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Basket/Basket.API/Basket.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -357,11 +349,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.Basket.API/Dockerfile" />
         <item itemvalue=".NET Launch Settings Profile.Basket.API" />
         <item itemvalue="Docker.docker-compose.yml.rabbitmq: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.basket.api: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -430,13 +422,6 @@
       <workItem from="1690116313927" duration="2838000" />
       <workItem from="1690224035437" duration="5116000" />
       <workItem from="1690229534581" duration="2808000" />
-    </task>
-    <task id="LOCAL-00002" summary="🐛(docker-compose) : Fixed  Issue of Mongob in development mode by adding mongod Command">
-      <created>1680823714879</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1680823714879</updated>
     </task>
     <task id="LOCAL-00003" summary="🐛(docker-compose): Pushed docker-compose">
       <created>1680823765581</created>
@@ -774,7 +759,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690225209335</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="🚧(Basket.Api,Order.Api) : Update Docker Files and changes in docker-compose">
+      <created>1690234646838</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1690234646838</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -807,7 +799,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="(Ordering.Api) : intialized domain ,application and infrastcture layers projects" />
     <MESSAGE value="(Ordering): Added files  in Git" />
     <MESSAGE value="(Ordering) : Added references between layers" />
     <MESSAGE value="✨(EntityBase,ValueObjects) : Added base Classes for entity and value" />
@@ -832,7 +823,8 @@
     <MESSAGE value="(BasketController) : Added discount logic in update basket" />
     <MESSAGE value="(BasketCheckOutEvent) : Inheriered Basket Checkout Event from Intergration Base" />
     <MESSAGE value="✨(BasketCheckoutConsumer,BasketCheckoutEvent,InfrastructureServiceRegistration) : Consumed BasketCheckoutEvent in RabbitMq" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨(BasketCheckoutConsumer,BasketCheckoutEvent,InfrastructureServiceRegistration) : Consumed BasketCheckoutEvent in RabbitMq" />
+    <MESSAGE value="(Basket.Api,Order.Api) : Update Docker Files and changes in docker-compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="(Basket.Api,Order.Api) : Update Docker Files and changes in docker-compose" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,24 +1,20 @@
-namespace EventBus.Messages.Events;
 #nullable enable
+using Ordering.Domain.Entities;
+
+namespace EventBus.Messages.Events;
+
 public class BasketCheckOutEvent : IntegrationBaseEvent
 {
-    public string UserName { get; set; }
-    public decimal TotalPrice { get; set; }
+    public Order Order { get; set; } 
 
-    // BillingAddress
-    public string? FirstName { get; set; }
-    public string? LastName { get; set; }
-    
-    public string EmailAddress { get; set; }
-    public string AddressLine { get; set; }
-    public string Country { get; set; }
-    public string State { get; set; }
-    public string ZipCode { get; set; }
+    public BasketCheckOutEvent()
+    {
+        Order = new Order();
+    }
 
-    // Payment
-    public string CardName { get; set; }
-    public string CardNumber { get; set; }
-    public string Expiration { get; set; }
-    public string CVV { get; set; }
-    public int PaymentMethod { get; set; }
+    public BasketCheckOutEvent(Order order)
+    {
+        this.Order = order;
+    }
+
 }

@@ -13,14 +13,19 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🚧(BasketCheckout,BasketController) : Added Checkout Method in Basket Controller">
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🎨(BasketCheckOutEvent) : Inheriered Basket Checkout Event from Intergration Base">
+      <change afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/EventBusConsumer/BasketCheckoutConsumer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider-publish/Catalog.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider-publish/Catalog.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider-publish/Catalog.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider-publish/Catalog.API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider-publish/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider-publish/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider-publish/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider-publish/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider-publish/web.config" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider-publish/web.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BuildingBlocks/EventBus.Messages/EventBus.Messages.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/BuildingBlocks/EventBus.Messages/EventBus.Messages.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BuildingBlocks/EventBus.Messages/Events/BasketCheckOutEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BuildingBlocks/EventBus.Messages/Events/BasketCheckOutEvent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/Ordering.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/Ordering.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/InfrastructureServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/InfrastructureServiceRegistration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Ordering.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Ordering.Infrastructure.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +50,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/025e77837d8c4e0699f6e06ef02270d718e5e0/7e/227b2ea4/DbConnectionOptions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/20fd7f9eb74642ce9c6654e64dc453771e3880/90/9f00aee4/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70f617fc68cf47c4af27e06f2b56f801b1c8a8/54/0ba919a5/AsyncValueTaskMethodBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7c02fbb146794ad3b2b124c50fe165fc13200/34/a449532c/EmailAddress.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b27001fc3a3a410d8f2eeb5a8de7b2742d86a8/1d/2336526c/IDbConnection.cs" root0="SKIP_HIGHLIGHTING" />
@@ -57,6 +63,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1857d4782345fd9cd8a52465f42c2fd5c6434535f03946476a65d6e1c1/HostedServiceConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1aee7810d6346893bb74bb0837c272b11a0f53fa2e6561f89136dd192da3af9/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1af51483c9bf18871cce649b9f966dd7be686536f998c33bba3c5fc4adea4a0/Task.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1f18529517a1d3c051def436a4696cc374fd1877837b7e6cd9efc464122ef341/AsyncMethodBuilderCore.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2d445522741c5be328ad17d97d53b5df2bd4e863c6eaea5416af5b8d52e59caf/RedisCache.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2f10f2a1f3bbdbc3696823de50e6726ba2ae7f8cf2e6dfc487a9c0b8c1f7b4/ConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/30f9b5142f17662d07ec32d28e81835335cf45a755b613183ff1e20cb8b8/RedisCacheOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/36e740b59df23626d207e72ea77e34298e53dd99db463eee529f8c416b5664/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
@@ -65,23 +73,30 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4ed670d711d7b07aabb459cee330d6bff3b4811ae4b41973b7c84261c4ae/IMongoDatabase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/501e16d8c2c1e65d99afc461a23a5b5e4b73f04805c9349a1d0b9575c68f8/Builders.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/50245137e992c658ce9f9f5fa1d238ff075ad58ef9acb8b123992aa68ce9f/Throw.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5141e6fd7a52fefd6aea3ac3b3d2cca704a95447cebbdf540d09e379d3b6884/ISendEndpoint.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/575c31ecc35a636b6f962cb71d53992552941a18982aae1c8e6c16305cc3761b/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/73f58a70a76e491eb4bcf9d90ef5628b378a8/_8ad91/HttpStatusCode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76d612d12f53dc8b9f997548c29cc61e922a1f61c80d192a45c3cecdff7/SqlServerDatabaseCreator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7df7da5b32d9ba52a4065e8e7546f391a2ae3d8cd3753c3cc254f332faf6d/DeleteResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8720c577beee5a5b715d8968d9151d59fa406faa7694c4e5486dfa908541ba23/Dns.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8a85de77c289b07238cadac21281f64ccb6c5169f4be7aaa14b4ee4d7e7ac/SendEndpointProxy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8aca45508683a6169bab9e8bd96b7cda607d638cacfaa31173c8c278c45/ISender.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8afd6870c47fcf36d178e7775a26ed527416b2ae9996d81422b0f0ac26d03d/ConfigurationOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/95c148312c579a19e8b216a7781af868f571d0f4b6294e5310fc981a2bbb5d1/RelationalConnection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9a681c729aca2ccbcfe4f9949c066d9bff4aac0b76afb62deee3ebffd93ab5e/DistributedCacheExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9e86c3ea3ae433bc7c87cfb655f15d439c9e4a23166e4f22bb595d9df620b1/IDistributedCache.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a8444060809941d66dca96c0f251d262d293679e8df7c7f17becb85c03c/PublishEndpoint.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a928d32776b965fad37de1e32a13705f8ee6c9e4abebc72bdca133f0fdc9b0/ReplaceOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b397e8927858d49727c89551439979f88165542b9d5de94c9ccfa63be5f7d67f/GrpcEndpointRouteBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b8583cb77a276fb9dbb7a8c129291eddb743424cae4f212cdbb0b092cd44115e/IMongoCollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c2f8e44da84e617a76d3c0d3215f927da267c4719b7b292db5828108898e92a/DependencyInjectionRegistrationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c4bf5b7e1f6dad83b16c10e468186df52ccb21277b3e31a56c4178a97/MongoClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c7b94ab5cafcd22a0f372329ee9713e9050bc38ca0bcbff1999781d81fd0/ConnectionContextFactory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d32428f0bd308c47ce3854f52d63412a5128a6bc65426eebceb6dbde50f713/RouteAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/eaf53ade803ac5b1d88b7222b58be5318268b6f95e420e21446447cf184e4a/ConnectionFactory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f3981d658666ec9cc1e6958fe22f8614bfe02ccb6625b056c3ece3729c9262/JsonConvert.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f9749fe3576a687c3c42f3794cefe8f8d91e62f939c66c0a32dbb3f74255/ManualResetEventSlim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Localization/Localizable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Repositories/BasketRepository.cs" root0="FORCE_HIGHLIGHTING" />
@@ -91,11 +106,16 @@
     <setting file="file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Exceptions/NotFoundException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Features/Orders/Commands/DeleteOrder/DeleteOrderCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Features/Orders/Queries/GetOrdersList/GetOrdersReponseList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/EventBusConsumer/BasketCheckoutConsumer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/InfrastructureServiceRegistration.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
+  </component>
   <component name="ProjectId" id="2NAEKHIul7iQnUIwZTdZtqYeRIC" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -111,7 +131,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.33211008&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.42647058&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -128,7 +148,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.Discount.Grpc">
+  <component name="RunManager" selected=".NET Launch Settings Profile.Basket.API">
     <configuration name="Basket.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile" temporary="true">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Basket/Basket.API/Basket.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -234,17 +254,6 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="Basket.API/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="buildOnly" value="true" />
-          <option name="contextFolderPath" value="$PROJECT_DIR$" />
-          <option name="sourceFilePath" value="src/Services/Basket/Basket.API/Dockerfile" />
-        </settings>
-      </deployment>
-      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
-      <method v="2" />
-    </configuration>
     <configuration name="Catalog.Api/DockerCompose" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -319,6 +328,20 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.rabbitmq: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="rabbitmq" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue=".NET Launch Settings Profile.Ordering.API" />
       <item itemvalue=".NET Launch Settings Profile.Ordering.API: IIS Express" />
@@ -328,17 +351,17 @@
       <item itemvalue=".NET Launch Settings Profile.Catalog.API" />
       <item itemvalue=".NET Launch Settings Profile.Basket.API" />
       <item itemvalue="Docker.Catalog.Api/DockerCompose" />
+      <item itemvalue="Docker.docker-compose.yml.rabbitmq: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.basket.api: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.discount.api: Compose Deployment" />
-      <item itemvalue="Docker.Basket.API/Dockerfile" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue=".NET Launch Settings Profile.Basket.API" />
+        <item itemvalue="Docker.docker-compose.yml.rabbitmq: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.basket.api: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.discount.api: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.discount.api: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -401,7 +424,11 @@
       <workItem from="1689501075854" duration="13989000" />
       <workItem from="1689622984086" duration="6540000" />
       <workItem from="1689793704129" duration="3747000" />
-      <workItem from="1690048411874" duration="581000" />
+      <workItem from="1690048411874" duration="6680000" />
+      <workItem from="1690061165446" duration="4746000" />
+      <workItem from="1690103897480" duration="8347000" />
+      <workItem from="1690114294198" duration="668000" />
+      <workItem from="1690116313927" duration="2838000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Basic Data Layer">
       <created>1680313616100</created>
@@ -732,7 +759,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689629621099</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="🔥(BasketController) : Added discount logic in update basket">
+      <created>1690053272243</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1690053272243</updated>
+    </task>
+    <task id="LOCAL-00049" summary="🎨(BasketCheckOutEvent) : Inheriered Basket Checkout Event from Intergration Base">
+      <created>1690053355237</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1690053355237</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -765,8 +806,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="(BasketController,DiscountGrpcService) : Added DiscountGrpcService.cs and Add GetDiscount Method" />
-    <MESSAGE value="(basketController) : Fixed Grpc Call Issues" />
     <MESSAGE value="✨(Ordering.Api) : Intialized order api service" />
     <MESSAGE value="(Ordering.Api) : intialized domain ,application and infrastcture layers projects" />
     <MESSAGE value="(Ordering): Added files  in Git" />
@@ -790,7 +829,9 @@
     <MESSAGE value="⬆️(Basket.Api) : Added Rabbit Mq project dependices" />
     <MESSAGE value="(BasketCheckoutEvent,BasketController) : Fixed some class issues" />
     <MESSAGE value="(BasketCheckout,BasketController) : Added Checkout Method in Basket Controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="(BasketCheckout,BasketController) : Added Checkout Method in Basket Controller" />
+    <MESSAGE value="(BasketController) : Added discount logic in update basket" />
+    <MESSAGE value="(BasketCheckOutEvent) : Inheriered Basket Checkout Event from Intergration Base" />
+    <option name="LAST_COMMIT_MESSAGE" value="(BasketCheckOutEvent) : Inheriered Basket Checkout Event from Intergration Base" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -836,13 +877,13 @@
         </line-breakpoint>
         <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/InfrastructureServiceRegistration.cs</url>
-          <line>15</line>
+          <line>18</line>
           <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Ordering\Ordering.Infrastructure\InfrastructureServiceRegistration.cs" initialLine="15" containingFunctionPresentation="method 'AddInfrastructureServices'">
             <startOffsets>
-              <option value="578" />
+              <option value="677" />
             </startOffsets>
             <endOffsets>
-              <option value="722" />
+              <option value="821" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="11" />
@@ -875,55 +916,68 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Services/Ordering/Ordering.API/Controllers/OrderController.cs</url>
-          <line>46</line>
-          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Ordering\Ordering.API\Controllers\OrderController.cs" initialLine="46" containingFunctionPresentation="method 'UpdateOrder'">
+          <line>35</line>
+          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Ordering\Ordering.API\Controllers\OrderController.cs" initialLine="35" containingFunctionPresentation="method 'CheckoutOrder'">
             <startOffsets>
-              <option value="1555" />
+              <option value="1189" />
             </startOffsets>
             <endOffsets>
-              <option value="1585" />
+              <option value="1232" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Features/Orders/Commands/CheckOutOrder/CheckOutCommandHandler.cs</url>
+          <line>24</line>
+          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Ordering\Ordering.Application\Features\Orders\Commands\CheckOutOrder\CheckOutCommandHandler.cs" initialLine="24" containingFunctionPresentation="method 'Handle'">
+            <startOffsets>
+              <option value="886" />
+            </startOffsets>
+            <endOffsets>
+              <option value="942" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs</url>
-          <line>48</line>
-          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Basket\Basket.API\Controllers\BasketController.cs" initialLine="48" containingFunctionPresentation="method 'UpdateBasket'">
+          <line>79</line>
+          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Basket\Basket.API\Controllers\BasketController.cs" initialLine="78" containingFunctionPresentation="method 'Checkout'">
             <startOffsets>
-              <option value="1761" />
+              <option value="2882" />
             </startOffsets>
             <endOffsets>
-              <option value="1790" />
+              <option value="2928" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="17" />
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs</url>
-          <line>54</line>
-          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Basket\Basket.API\Controllers\BasketController.cs" initialLine="54" containingFunctionPresentation="local function 'ApplyDiscountCoupons'">
+          <line>86</line>
+          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Basket\Basket.API\Controllers\BasketController.cs" initialLine="86" containingFunctionPresentation="method 'Checkout'">
             <startOffsets>
-              <option value="1938" />
+              <option value="3222" />
             </startOffsets>
             <endOffsets>
-              <option value="1984" />
+              <option value="3263" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Program.cs</url>
-          <line>20</line>
-          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Basket\Basket.API\Program.cs" initialLine="20" containingFunctionPresentation="">
+          <url>file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/EventBusConsumer/BasketCheckoutConsumer.cs</url>
+          <line>23</line>
+          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Ordering\Ordering.Infrastructure\EventBusConsumer\BasketCheckoutConsumer.cs" initialLine="24" containingFunctionPresentation="method 'Consume'">
             <startOffsets>
-              <option value="589" />
+              <option value="653" />
             </startOffsets>
             <endOffsets>
-              <option value="766" />
+              <option value="691" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
         <breakpoint type="DotNet Exception Breakpoints">
           <properties exception="System.Net.Sockets.SocketException" isInternal="false" displayValue="SocketException" namespaceName="System.Net.Sockets">

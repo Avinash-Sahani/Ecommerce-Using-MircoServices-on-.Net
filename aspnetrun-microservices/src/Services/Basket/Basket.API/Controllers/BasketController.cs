@@ -4,12 +4,14 @@ using Basket.API.Entities;
 using Basket.API.GrpcServices;
 using Basket.API.Repositories;
 using Catalog.API.Localization;
+using EventBus.Messages.Common;
 using EventBus.Messages.Events;
 using MassTransit;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Caching.Distributed;
+
 
 namespace Basket.API.Controllers;
+
 [ApiController]
 [Route(Localizable.BasketRouteConstant)]
 public class BasketController : ControllerBase
@@ -18,16 +20,18 @@ public class BasketController : ControllerBase
     private DiscountGrpcService DiscountGrpcService { get; }
 
     private readonly IPublishEndpoint PublishEndpoint;
-    public BasketController(IBasketRepository basketRepository, DiscountGrpcService discountGrpcService,IPublishEndpoint endpoint)
+
+    public BasketController(IBasketRepository basketRepository, DiscountGrpcService discountGrpcService,
+        IPublishEndpoint endpoint)
     {
         BasketRepository = basketRepository ?? throw new ArgumentNullException(nameof(basketRepository));
-        DiscountGrpcService = discountGrpcService ?? throw  new ArgumentNullException(nameof(discountGrpcService));
+        DiscountGrpcService = discountGrpcService ?? throw new ArgumentNullException(nameof(discountGrpcService));
         PublishEndpoint = endpoint ?? throw new ArgumentNullException(nameof(endpoint));
     }
 
-    
+
     [HttpGet("{username:required}")]
-    [ProducesResponseType(typeof(ShoppingCart),(int)HttpStatusCode.OK)]
+    [ProducesResponseType(typeof(ShoppingCart), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<ShoppingCart?>> GetBasket(string username)
     {
         var basket = await GetBasketFromRepository(username);
@@ -41,17 +45,14 @@ public class BasketController : ControllerBase
     }
 
     [HttpPut]
-    [ProducesResponseType(typeof(ShoppingCart),(int)HttpStatusCode.OK)]
+    [ProducesResponseType(typeof(ShoppingCart), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<ShoppingCart>> UpdateBasket([FromBody] ShoppingCart cart)
     {
-      
-
         await ApplyDiscountCoupons();
         return Ok(await BasketRepository.UpdateBasket(cart));
-        
+
         async Task ApplyDiscountCoupons()
         {
-           
             foreach (var shoppingCartItem in cart?.Items!)
             {
                 var coupon = await DiscountGrpcService.GetDiscountByProductName(shoppingCartItem.ProductName);
@@ -59,34 +60,32 @@ public class BasketController : ControllerBase
             }
         }
     }
-   
+
     [HttpDelete("{username}")]
-    [ProducesResponseType(typeof(bool),(int)HttpStatusCode.OK)]
-    [ProducesResponseType(typeof(bool),(int)HttpStatusCode.NotFound)]
+    [ProducesResponseType(typeof(bool), (int)HttpStatusCode.OK)]
+    [ProducesResponseType(typeof(bool), (int)HttpStatusCode.NotFound)]
     public async Task<ActionResult<bool>> DeleteBasket(string username)
     {
         var isDeleted = await BasketRepository.DeleteBasket(username);
         return isDeleted ? Ok(isDeleted) : NotFound(isDeleted);
     }
 
- 
+
     [Route("[action]")]
     [HttpPost]
     [ProducesResponseType((int)HttpStatusCode.Accepted)]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> Checkout([FromBody] BasketCheckOutEvent basketCheckout)
     {
-        var username = basketCheckout?.UserName;
+        var username = basketCheckout.Order.UserName;
         if (string.IsNullOrEmpty(username?.Trim()))
             throw new ArgumentException(nameof(username));
-        var currentBasket = await GetBasketFromRepository(basketCheckout?.UserName ?? string.Empty);
+        var currentBasket = await GetBasketFromRepository(username);
         if (currentBasket == null)
             return BadRequest();
-        
-        PublishEndpoint?.Publish(currentBasket);
-        await BasketRepository.DeleteBasket(username);
+        basketCheckout.Order.TotalPrice = currentBasket.TotalPrice;
+        PublishEndpoint?.Publish(basketCheckout);
+        await BasketRepository.DeleteBasket(username ?? string.Empty);
         return Accepted();
     }
-
-
 }

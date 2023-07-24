@@ -3,9 +3,9 @@ using Basket.API.GrpcServices;
 using Basket.API.Repositories;
 using Catalog.API.Localization;
 using Discount.Grpc.Protos;
+using EventBus.Messages.Common;
 using MassTransit;
 
-using MassTransit.MultiBus;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -22,15 +22,25 @@ builder.Services.AddGrpcClient<DiscountProtoService.DiscountProtoServiceClient>(
     port => port.Address = new Uri(configuration["GrpcSettings:DiscountUrl"] ?? string.Empty)
 );
 builder.Services.AddScoped<DiscountGrpcService>();
-builder.Services.AddMassTransit(config =>
+builder.Services.AddMassTransit(config => {
+    
+
+    config.UsingRabbitMq((ctx, cfg) => {
+        cfg.Host(builder.Configuration["EventBusSettings:HostAddress"]);
+
+        cfg.ConfigureEndpoints(ctx);
+    });
+});
+
+/*builder.Services.AddMassTransit(config =>
 {
     config.UsingRabbitMq((context, cfg) =>
     {
-        cfg.Host(configuration["EventBusSettings:HostAddress"]); // Replace with your RabbitMQ host URL
+       // cfg.Host(configuration["EventBusSettings:HostAddress"]); // Replace with your RabbitMQ host URL
         
-        cfg.ConfigureEndpoints(context);
+     //   cfg.ConfigureEndpoints(context);
     });
-});
+});*/
 
 //builder.Services.AddMassTransitHostedService();
 var app = builder.Build();

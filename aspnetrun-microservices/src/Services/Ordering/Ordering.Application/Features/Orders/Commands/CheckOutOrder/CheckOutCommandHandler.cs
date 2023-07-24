@@ -9,7 +9,7 @@ namespace Ordering.Application.Features.Orders.Commands.CheckOutOrder;
 
 public class CheckOutCommandHandler : IRequestHandler<CheckOutOrderCommand,int>
 {
-    public CheckOutCommandHandler(IOrderRepository repository, ILogger<CheckOutOrderCommand> logger, IEmailService emailService)
+    public CheckOutCommandHandler(IOrderRepository repository, ILogger<CheckOutOrderCommand> logger, IEmailService? emailService)
     {
         Repository = repository;
         Logger = logger;
@@ -18,7 +18,7 @@ public class CheckOutCommandHandler : IRequestHandler<CheckOutOrderCommand,int>
 
     public IOrderRepository Repository { get; }
     public ILogger<CheckOutOrderCommand> Logger { get; }
-    public IEmailService EmailService { get; } 
+    public IEmailService? EmailService { get; } 
     
     public async Task<int> Handle(CheckOutOrderCommand request, CancellationToken cancellationToken)
     {
@@ -34,7 +34,7 @@ public class CheckOutCommandHandler : IRequestHandler<CheckOutOrderCommand,int>
         var email = new Email("dummyEmail@gmail.com", "Order Created", "Order Details Confirmation");
         try
         {
-            await EmailService.SendEmail(email);
+            await EmailService?.SendEmail(email)!;
         }
         catch (Exception e)
         {

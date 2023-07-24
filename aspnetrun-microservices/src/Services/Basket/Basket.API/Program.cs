@@ -23,8 +23,6 @@ builder.Services.AddGrpcClient<DiscountProtoService.DiscountProtoServiceClient>(
 );
 builder.Services.AddScoped<DiscountGrpcService>();
 builder.Services.AddMassTransit(config => {
-    
-
     config.UsingRabbitMq((ctx, cfg) => {
         cfg.Host(builder.Configuration["EventBusSettings:HostAddress"]);
 

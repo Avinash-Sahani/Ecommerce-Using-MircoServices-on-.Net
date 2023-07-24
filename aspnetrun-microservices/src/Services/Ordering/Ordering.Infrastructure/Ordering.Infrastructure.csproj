@@ -19,6 +19,7 @@
     <PackageReference Include="MassTransit" Version="8.1.0-develop.1441" />
     <PackageReference Include="MassTransit.Abstractions" Version="8.1.0-develop.1441" />
     <PackageReference Include="MassTransit.RabbitMQ" Version="8.1.0-develop.1441" />
+    
   </ItemGroup>
 
   <ItemGroup>

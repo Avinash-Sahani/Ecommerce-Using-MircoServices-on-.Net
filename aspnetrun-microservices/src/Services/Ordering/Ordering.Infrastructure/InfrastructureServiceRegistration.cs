@@ -32,8 +32,7 @@ public static class InfrastructureServiceRegistration
             config.UsingRabbitMq((ctx, cfg) =>
             {
                 cfg.Host(configuration["EventBusSettings:HostAddress"]);
-
-                cfg.ConfigureEndpoints(ctx);
+                
                 cfg.ReceiveEndpoint(EventBusConstants.BasketCheckoutQueue, c =>
                 {
                     c.ConfigureConsumer<BasketCheckOutConsumer>(ctx);

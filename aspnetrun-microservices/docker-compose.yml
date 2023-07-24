@@ -46,10 +46,13 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - "Redis:CacheUrl=basketdb:6379,abortConnect=false"
       - "GrpcSettings:DiscountUrl=http://discount.grpc"
+      - "EventBusSettings:HostAddress=amqp://admin:password@rabbitmq:5672"
+      
     ports:
       - "8001:80"
     depends_on:
       - basketdb
+      - rabbitmq
     
   discountdb:
     image: postgres
@@ -125,11 +128,13 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - "ConnectionStrings:OrderingConnectionString=Server=orderdb;Database=OrderDb;User Id=sa;Password=SwN12345678; TrustServerCertificate=True;"
+      -  "EventBusSettings:HostAddress=amqp://admin:password@rabbitmq:5672"
     build:
       context: .
       dockerfile: src/Services/Ordering/Ordering.API/Dockerfile
     depends_on:
       - orderdb
+      - rabbitmq
     ports:
       - "8004:80"
   rabbitmq:

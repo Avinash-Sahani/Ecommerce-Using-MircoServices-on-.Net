@@ -29,7 +29,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Application", "src
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Infrastructure", "src\Services\Ordering\Ordering.Infrastructure\Ordering.Infrastructure.csproj", "{C481A485-A5C9-447A-9FD1-27AE9D10C2BC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{477AE45F-2AF9-4728-A0C8-35E18E8BA8A9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventMessageQueue", "EventMessageQueue", "{477AE45F-2AF9-4728-A0C8-35E18E8BA8A9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Messages", "src\BuildingBlocks\EventBus.Messages\EventBus.Messages.csproj", "{58BDB5DF-0DA6-4501-9CAB-011F187362AA}"
 EndProject

@@ -13,7 +13,14 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🚧(Basket.Api,Order.Api) : Update Docker Files and changes in docker-compose" />
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Basket.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Basket.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +102,6 @@
     <setting file="file://$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Data/ICatalogContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Release/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Exceptions/NotFoundException.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/avina/RiderProjects/MicroServices-Ecommerce/aspnetrun-microservices/src/Services/Ordering/Ordering.Application/Features/Orders/Commands/CheckOutOrder/CheckOutCommandHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Features/Orders/Commands/DeleteOrder/DeleteOrderCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Features/Orders/Queries/GetOrdersList/GetOrdersReponseList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/EventBusConsumer/BasketCheckoutConsumer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -143,22 +149,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
-    <configuration name="Basket.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile" temporary="true">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Basket/Basket.API/Basket.API.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="Basket.API" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Docker.docker-compose.yml.catalog.api: Compose Deployment">
     <configuration name="Catalog.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Catalog.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
@@ -249,11 +240,21 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="Basket.API/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+    <configuration name="Catalog.API/Dockerfile (1)" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
-          <option name="contextFolderPath" value="$PROJECT_DIR$" />
-          <option name="sourceFilePath" value="src/Services/Basket/Basket.API/Dockerfile" />
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="src/Services/Catalog/Catalog.API/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Catalog.API/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="src/Services/Catalog/Catalog.API/Dockerfile" />
         </settings>
       </deployment>
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
@@ -319,12 +320,12 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.rabbitmq: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.catalog.api: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="rabbitmq" />
+              <option value="catalog.api" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -340,19 +341,19 @@
       <item itemvalue=".NET Launch Settings Profile.Discount.API" />
       <item itemvalue=".NET Launch Settings Profile.Discount.API: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.Catalog.API" />
-      <item itemvalue=".NET Launch Settings Profile.Basket.API" />
       <item itemvalue="Docker.Catalog.Api/DockerCompose" />
-      <item itemvalue="Docker.Basket.API/Dockerfile" />
-      <item itemvalue="Docker.docker-compose.yml.rabbitmq: Compose Deployment" />
+      <item itemvalue="Docker.Catalog.API/Dockerfile" />
+      <item itemvalue="Docker.Catalog.API/Dockerfile (1)" />
+      <item itemvalue="Docker.docker-compose.yml.catalog.api: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.basket.api: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.catalog.api: Compose Deployment" />
+        <item itemvalue="Docker.Catalog.API/Dockerfile" />
+        <item itemvalue="Docker.Catalog.API/Dockerfile (1)" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.Basket.API/Dockerfile" />
-        <item itemvalue=".NET Launch Settings Profile.Basket.API" />
-        <item itemvalue="Docker.docker-compose.yml.rabbitmq: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.basket.api: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -422,13 +423,10 @@
       <workItem from="1690116313927" duration="2838000" />
       <workItem from="1690224035437" duration="5116000" />
       <workItem from="1690229534581" duration="2808000" />
-    </task>
-    <task id="LOCAL-00003" summary="🐛(docker-compose): Pushed docker-compose">
-      <created>1680823765581</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1680823765581</updated>
+      <workItem from="1690235978063" duration="745000" />
+      <workItem from="1690287883931" duration="1783000" />
+      <workItem from="1690290317034" duration="2354000" />
+      <workItem from="1690292997290" duration="4498000" />
     </task>
     <task id="LOCAL-00004" summary="📁(Catalog.Api): Configuration Files">
       <created>1680971472108</created>
@@ -766,7 +764,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690234646838</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="🚧(UnusedReferences) : Remove Unused References">
+      <created>1690235274588</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1690235274588</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -799,7 +804,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="(Ordering): Added files  in Git" />
     <MESSAGE value="(Ordering) : Added references between layers" />
     <MESSAGE value="✨(EntityBase,ValueObjects) : Added base Classes for entity and value" />
     <MESSAGE value="✨(features,behaviour,contracts): Added directories of sub layers" />
@@ -824,7 +828,8 @@
     <MESSAGE value="(BasketCheckOutEvent) : Inheriered Basket Checkout Event from Intergration Base" />
     <MESSAGE value="✨(BasketCheckoutConsumer,BasketCheckoutEvent,InfrastructureServiceRegistration) : Consumed BasketCheckoutEvent in RabbitMq" />
     <MESSAGE value="(Basket.Api,Order.Api) : Update Docker Files and changes in docker-compose" />
-    <option name="LAST_COMMIT_MESSAGE" value="(Basket.Api,Order.Api) : Update Docker Files and changes in docker-compose" />
+    <MESSAGE value="(UnusedReferences) : Remove Unused References" />
+    <option name="LAST_COMMIT_MESSAGE" value="(UnusedReferences) : Remove Unused References" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -863,13 +868,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs</url>
-          <line>79</line>
+          <line>78</line>
           <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Basket\Basket.API\Controllers\BasketController.cs" initialLine="79" containingFunctionPresentation="method 'Checkout'">
             <startOffsets>
-              <option value="2813" />
+              <option value="2781" />
             </startOffsets>
             <endOffsets>
-              <option value="2858" />
+              <option value="2826" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="48" />

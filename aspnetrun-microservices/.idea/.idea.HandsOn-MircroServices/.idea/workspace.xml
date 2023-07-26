@@ -16,9 +16,7 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="♻️(DiscountController) : Fixed Some minor issues in Discount Controller">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/Program.cs" afterDir="false" />
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🔧(ocelot.Local.json) : Fixed UpStream and DownStream paths in ocelot.json">
       <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/ocelot.Local.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/ocelot.Local.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -483,14 +481,7 @@
       <workItem from="1690287883931" duration="1783000" />
       <workItem from="1690290317034" duration="2354000" />
       <workItem from="1690292997290" duration="17155000" />
-      <workItem from="1690361822575" duration="11767000" />
-    </task>
-    <task id="LOCAL-00012" summary="🎨(docker-compose.yml) : Moved docker-compose from catalog.api">
-      <created>1681163528991</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1681163528991</updated>
+      <workItem from="1690361822575" duration="13147000" />
     </task>
     <task id="LOCAL-00013" summary="Just Checking Everyyhing is Working Fine">
       <created>1683984521222</created>
@@ -828,7 +819,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690374296740</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="🔧(ocelot.Local.json) : Fixed UpStream and DownStream paths in ocelot.json">
+      <created>1690374982493</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1690374982493</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -861,7 +859,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="(OrderContext ,OrderContextSeed) : Addded OrderContext class and orderContext" />
     <MESSAGE value="(RepositoryBase) : Implemented all IAsyncRepository Methods in Repo base class" />
     <MESSAGE value="✨(OrderRepository) : Created Order Repository and implement OrderImplmentation" />
     <MESSAGE value="✨(EmailService) : Added Email Feature to send email when order placed" />
@@ -886,7 +883,8 @@
     <MESSAGE value="(Program,OcelotApiGw) : Added Ocelot service and logging" />
     <MESSAGE value="(ocelot.Local) : Add configurations for Apis in ocelot local enivroment" />
     <MESSAGE value="♻️(DiscountController) : Fixed Some minor issues in Discount Controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="♻️(DiscountController) : Fixed Some minor issues in Discount Controller" />
+    <MESSAGE value="(ocelot.Local.json) : Fixed UpStream and DownStream paths in ocelot.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="(ocelot.Local.json) : Fixed UpStream and DownStream paths in ocelot.json" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

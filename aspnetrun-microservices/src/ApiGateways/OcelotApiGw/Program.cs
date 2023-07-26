@@ -1,4 +1,5 @@
 
+using Ocelot.Cache.CacheManager;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using HostingEnvironmentExtensions = Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions;
@@ -9,8 +10,7 @@ builder.Configuration.AddJsonFile($"ocelot.{currentEnvironmentName}.json", optio
 builder.Logging.AddConfiguration(builder.Configuration.GetSection("Logging"));
 builder.Logging.AddConsole();
 builder.Logging.AddDebug();
-builder.Services.AddOcelot();
-
+builder.Services.AddOcelot().AddCacheManager(settings => { settings.WithDictionaryHandle();});
 var app = builder.Build();
 
 

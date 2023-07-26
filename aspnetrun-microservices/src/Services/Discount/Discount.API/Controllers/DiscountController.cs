@@ -16,9 +16,9 @@ public class DiscountController : ControllerBase
         Repository = repository;
     }
 
-    [HttpGet("productName")]
+    [HttpGet("{productName}")]
     [ProducesResponseType(typeof(Coupon),(int) HttpStatusCode.OK)]
-    public async Task<ActionResult<Coupon>> GetDiscount([FromQuery] string productName)
+    public async Task<ActionResult<Coupon>> GetDiscount( string productName)
     {
         return Ok(await Repository.GetDiscount(productName));
     }
@@ -36,9 +36,9 @@ public class DiscountController : ControllerBase
         return Ok(await Repository.UpdateDiscount(coupon));
     }
 
-    [HttpDelete("productName")]
+    [HttpDelete("{productName}")]
     [ProducesResponseType(typeof(bool),(int) HttpStatusCode.OK)]
-    public async Task<ActionResult<bool>> DeleteDiscount([FromQuery] string productName)
+    public async Task<ActionResult<bool>> DeleteDiscount( string productName)
     {
         return Ok(await Repository.DeleteDiscount(productName));
     }

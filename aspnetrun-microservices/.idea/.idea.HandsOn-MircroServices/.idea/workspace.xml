@@ -16,13 +16,10 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🚧(Program,OcelotApiGw) : Added Ocelot service and logging">
-      <change afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/ocelot.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/ocelot.Local.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/ocelot.json" afterDir="false" />
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="♻️(DiscountController) : Fixed Some minor issues in Discount Controller">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/ocelot.Local.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/ocelot.Local.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,12 +97,14 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/eaf53ade803ac5b1d88b7222b58be5318268b6f95e420e21446447cf184e4a/ConnectionFactory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f3981d658666ec9cc1e6958fe22f8614bfe02ccb6625b056c3ece3729c9262/JsonConvert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f9749fe3576a687c3c42f3794cefe8f8d91e62f939c66c0a32dbb3f74255/ManualResetEventSlim.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/avina/RiderProjects/MicroServices-Ecommerce/aspnetrun-microservices/src/ApiGateways/OcelotApiGw/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Localization/Localizable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Repositories/BasketRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Repositories/IBasketRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Data/ICatalogContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Release/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/avina/RiderProjects/MicroServices-Ecommerce/aspnetrun-microservices/src/Services/Discount/Discount.API/Controllers/DiscountController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Exceptions/NotFoundException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Features/Orders/Commands/DeleteOrder/DeleteOrderCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Features/Orders/Queries/GetOrdersList/GetOrdersReponseList.cs" root0="FORCE_HIGHLIGHTING" />
@@ -154,7 +153,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.Ordering.API">
+  <component name="RunManager" selected=".NET Launch Settings Profile.OcelotApiGw: IIS Express">
     <configuration name="Basket.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Basket/Basket.API/Basket.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -290,16 +289,6 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="Catalog.API/Dockerfile (1)" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="buildOnly" value="true" />
-          <option name="sourceFilePath" value="src/Services/Catalog/Catalog.API/Dockerfile" />
-        </settings>
-      </deployment>
-      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
-      <method v="2" />
-    </configuration>
     <configuration name="Catalog.API/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -384,6 +373,20 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.discount.api: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="discount.api" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue=".NET Launch Settings Profile.OcelotApiGw: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.OcelotApiGw: http" />
@@ -395,19 +398,19 @@
       <item itemvalue=".NET Launch Settings Profile.Catalog.API" />
       <item itemvalue=".NET Launch Settings Profile.Basket.API" />
       <item itemvalue="Docker.Catalog.Api/DockerCompose" />
+      <item itemvalue="Docker.docker-compose.yml.discount.api: Compose Deployment" />
       <item itemvalue="Docker.Catalog.API/Dockerfile" />
-      <item itemvalue="Docker.Catalog.API/Dockerfile (1)" />
       <item itemvalue="Docker.docker-compose.yml.catalog.api: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.basket.api: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml.basket.api: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.discount.api: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.basket.api: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.catalog.api: Compose Deployment" />
         <item itemvalue="Docker.Catalog.API/Dockerfile" />
-        <item itemvalue="Docker.Catalog.API/Dockerfile (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -480,21 +483,7 @@
       <workItem from="1690287883931" duration="1783000" />
       <workItem from="1690290317034" duration="2354000" />
       <workItem from="1690292997290" duration="17155000" />
-      <workItem from="1690361822575" duration="2509000" />
-    </task>
-    <task id="LOCAL-00010" summary="✨(BasketController) : Implemented Basket Controller">
-      <created>1681163036086</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1681163036086</updated>
-    </task>
-    <task id="LOCAL-00011" summary="✨(appsettings.json) : Fix conncetion issues">
-      <created>1681163058889</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1681163058889</updated>
+      <workItem from="1690361822575" duration="11767000" />
     </task>
     <task id="LOCAL-00012" summary="🎨(docker-compose.yml) : Moved docker-compose from catalog.api">
       <created>1681163528991</created>
@@ -825,7 +814,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690320191370</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="🔧(ocelot.Local) : Add configurations for Apis in ocelot local enivroment">
+      <created>1690364453904</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1690364453905</updated>
+    </task>
+    <task id="LOCAL-00060" summary="♻️(DiscountController) : Fixed Some minor issues in Discount Controller">
+      <created>1690374296739</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1690374296740</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -858,8 +861,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="✨(CheckOutCommandValidator) : Added Validation in CheckOutCommandValidator" />
-    <MESSAGE value="♻️(GetOrderlistQuery*) :perfrom Refactoring in Response Model" />
     <MESSAGE value="(OrderContext ,OrderContextSeed) : Addded OrderContext class and orderContext" />
     <MESSAGE value="(RepositoryBase) : Implemented all IAsyncRepository Methods in Repo base class" />
     <MESSAGE value="✨(OrderRepository) : Created Order Repository and implement OrderImplmentation" />
@@ -883,7 +884,9 @@
     <MESSAGE value="(project) : Renamed folder name to event bus" />
     <MESSAGE value="(Hands-ONMicroServices) : Add Api Gateway Project" />
     <MESSAGE value="(Program,OcelotApiGw) : Added Ocelot service and logging" />
-    <option name="LAST_COMMIT_MESSAGE" value="(Program,OcelotApiGw) : Added Ocelot service and logging" />
+    <MESSAGE value="(ocelot.Local) : Add configurations for Apis in ocelot local enivroment" />
+    <MESSAGE value="♻️(DiscountController) : Fixed Some minor issues in Discount Controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="♻️(DiscountController) : Fixed Some minor issues in Discount Controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -932,6 +935,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/Program.cs</url>
+          <line>7</line>
+          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\ApiGateways\OcelotApiGw\Program.cs" initialLine="7" containingFunctionPresentation="">
+            <startOffsets>
+              <option value="275" />
+            </startOffsets>
+            <endOffsets>
+              <option value="388" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

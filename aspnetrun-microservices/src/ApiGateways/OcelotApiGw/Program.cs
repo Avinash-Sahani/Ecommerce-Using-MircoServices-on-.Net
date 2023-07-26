@@ -1,4 +1,4 @@
-using Microsoft.Extensions.Hosting.Internal;
+
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using HostingEnvironmentExtensions = Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions;
@@ -13,9 +13,9 @@ builder.Services.AddOcelot();
 
 var app = builder.Build();
 
-await app.UseOcelot();
+
 
 
 app.MapGet("/", () => "Hello World!");
-
+await app.UseOcelot();
 app.Run();

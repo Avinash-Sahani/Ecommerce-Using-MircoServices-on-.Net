@@ -20,16 +20,13 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Shopping.Aggregator.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/WeatherForecast.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/appsettings.json" afterDir="false" />
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🎉(Shopping.Aggregator) : Added a project shopping aggregator">
+      <change afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/BasketItemExtendedModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/BasketModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/CatalogModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/OrderResponseModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HandsOn-MircroServices.sln" beforeDir="false" afterPath="$PROJECT_DIR$/HandsOn-MircroServices.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Shopping.Aggregator.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Shopping.Aggregator.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -559,14 +556,7 @@
       <workItem from="1690290317034" duration="2354000" />
       <workItem from="1690292997290" duration="17155000" />
       <workItem from="1690361822575" duration="20180000" />
-      <workItem from="1690407463277" duration="748000" />
-    </task>
-    <task id="LOCAL-00017" summary="🚧(Discount.Grpc) : Created Discount Grpc Service Project">
-      <created>1685091137842</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1685091137842</updated>
+      <workItem from="1690407463277" duration="2057000" />
     </task>
     <task id="LOCAL-00018" summary="🚧(Discount.Grpc) : Added replication code of Discount.Api ,replication needs to removed">
       <created>1685208003802</created>
@@ -904,7 +894,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690398779572</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="🎉(Shopping.Aggregator) : Added a project shopping aggregator">
+      <created>1690408522233</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1690408522233</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -937,7 +934,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="✨(Program.CS) : Added Application and Infrastructure layer dependices in Presentation Layer" />
     <MESSAGE value="(ApplicaitonServiceRegistartion,Migration) : Fixed Mediatr Isuue and Run Intital Migration" />
     <MESSAGE value="✨(docker-compose) : Added Rabbit Mq image in docker compose" />
     <MESSAGE value="(BasketCheckoutEvent,EventBus.Messages,IntegrationBaseEvent) : Add Event Bus project and also created Intergratiom Base Event class" />
@@ -962,7 +958,8 @@
     <MESSAGE value="⚡️(ocelot.Local.json) : added caching in catalog.api" />
     <MESSAGE value="(Ocelot.Devleopmment.Json) : Add configuration for development enviroment" />
     <MESSAGE value="(Dockerfile,docker-Compose) : Added Docker Support for Api Gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="(Dockerfile,docker-Compose) : Added Docker Support for Api Gateway" />
+    <MESSAGE value="(Shopping.Aggregator) : Added a project shopping aggregator" />
+    <option name="LAST_COMMIT_MESSAGE" value="(Shopping.Aggregator) : Added a project shopping aggregator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

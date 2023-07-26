@@ -15,4 +15,10 @@
     <Folder Include="Controllers" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Models\BasketItemExtendedModel.cs">
+      <DependentUpon>BasketModel.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
 </Project>

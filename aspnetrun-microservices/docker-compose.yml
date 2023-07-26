@@ -145,6 +145,21 @@ services:
     environment:
       - RABBITMQ_DEFAULT_USER=admin
       - RABBITMQ_DEFAULT_PASS=password
+  ocelotapigw:
+    container_name: ocelotapigw
+    image: ocelotapigw
+    build:
+      context: .
+      dockerfile: src/ApiGateways/OcelotApiGw/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8010:80"
+    depends_on:
+      - catalog.api
+      - basket.api
+      - discount.api
+      - order.api
 volumes:
   mongo_data:
   portainer_data:

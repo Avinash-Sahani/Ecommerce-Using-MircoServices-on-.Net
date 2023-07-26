@@ -13,7 +13,14 @@
         }
       ],
       "UpstreamPathTemplate": "/Catalog",
-      "UpstreamHttpMethod": [ "GET","POST","PUT" ]
+      "UpstreamHttpMethod": [ "GET","POST","PUT" ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "5s",
+        "PeriodTimespan": 1,
+        "Limit": 2
+      }
     },
     {
 
@@ -26,7 +33,14 @@
         }
       ],
       "UpstreamPathTemplate": "/Catalog/{id}",
-      "UpstreamHttpMethod": [ "GET","DELETE" ]
+      "UpstreamHttpMethod": [ "GET","DELETE" ], 
+      "RateLimitOptions": {
+      "ClientWhitelist": [],
+      "EnableRateLimiting": true,
+      "Period": "5s",
+      "PeriodTimespan": 1,
+      "Limit": 2
+    }
     }, 
     {
       "DownstreamPathTemplate": "/api/v1/catalog/products/category/{category}",
@@ -38,7 +52,14 @@
         }
       ],
       "UpstreamPathTemplate": "/Catalog/category/{category}",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+      "ClientWhitelist": [],
+      "EnableRateLimiting": true,
+      "Period": "5s",
+      "PeriodTimespan": 1,
+      "Limit": 2
+    }
     },
     //Basket Api
     {
@@ -51,7 +72,14 @@
         }
       ],
       "UpstreamPathTemplate": "/Basket/{username}",
-      "UpstreamHttpMethod": [ "GET","DELETE" ]
+      "UpstreamHttpMethod": [ "GET","DELETE" ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "5s",
+        "PeriodTimespan": 1,
+        "Limit": 2
+      }
     },
     {
       "DownstreamPathTemplate": "/api/v1/Basket",
@@ -63,7 +91,14 @@
         }
       ],
       "UpstreamPathTemplate": "/Basket",
-      "UpstreamHttpMethod": [ "PUT" ]
+      "UpstreamHttpMethod": [ "PUT" ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "5s",
+        "PeriodTimespan": 1,
+        "Limit": 2
+      }
     },
    
     {
@@ -76,7 +111,14 @@
         }
       ],
       "UpstreamPathTemplate": "/Basket/Checkout",
-      "UpstreamHttpMethod": [ "POST" ]
+      "UpstreamHttpMethod": [ "POST" ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "5s",
+        "PeriodTimespan": 1,
+        "Limit": 2
+      }
     },
     
     // Discount.Grpc
@@ -90,7 +132,14 @@
         }
       ],
       "UpstreamPathTemplate": "/Discount/{productName}",
-      "UpstreamHttpMethod": [ "GET","DELETE" ]
+      "UpstreamHttpMethod": [ "GET","DELETE" ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "5s",
+        "PeriodTimespan": 1,
+        "Limit": 2
+      }
     },
     {
       "DownstreamPathTemplate": "/api/v1/Discount",
@@ -102,7 +151,14 @@
         }
       ],
       "UpstreamPathTemplate": "/Discount",
-      "UpstreamHttpMethod": [ "PUT","POST" ]
+      "UpstreamHttpMethod": [ "PUT","POST" ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "5s",
+        "PeriodTimespan": 1,
+        "Limit": 2
+      }
     },
     {
       "DownstreamPathTemplate": "/api/v1/Order/{userName}",
@@ -114,7 +170,14 @@
         }
       ],
       "UpstreamPathTemplate": "/Order/{userName}",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "5s",
+        "PeriodTimespan": 1,
+        "Limit": 2
+      }
     }
   ],
   "GlobalConfiguration": {

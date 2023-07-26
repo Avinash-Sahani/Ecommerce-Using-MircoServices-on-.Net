@@ -16,9 +16,13 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🎉(Hands-ONMicroServices) : Add Api Gateway Project">
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/OcelotApiGw.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/OcelotApiGw.csproj" afterDir="false" />
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🚧(Program,OcelotApiGw) : Added Ocelot service and logging">
+      <change afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/ocelot.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/ocelot.Local.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/ocelot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/Properties/launchSettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,13 +46,12 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/025e77837d8c4e0699f6e06ef02270d718e5e0/7e/227b2ea4/DbConnectionOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/20fd7f9eb74642ce9c6654e64dc453771e3880/90/9f00aee4/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70f617fc68cf47c4af27e06f2b56f801b1c8a8/54/0ba919a5/AsyncValueTaskMethodBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7c02fbb146794ad3b2b124c50fe165fc13200/2b/43a24715/SendGridClientOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7c02fbb146794ad3b2b124c50fe165fc13200/34/a449532c/EmailAddress.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/90f95aaf994f4c6cb1fc8c135ddf7c77a880/21/e583156c/HostingEnvironmentExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/92eeb29091614413a3e5d8e470dd81eb18880/49/d88e5832/WebApplication.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b27001fc3a3a410d8f2eeb5a8de7b2742d86a8/1d/2336526c/IDbConnection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bb7b8e9f82ee4cc296a57aef759a3b4b145000/ef/dd800da9/NpgsqlConnection.cs" root0="SKIP_HIGHLIGHTING" />
@@ -98,7 +101,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f3981d658666ec9cc1e6958fe22f8614bfe02ccb6625b056c3ece3729c9262/JsonConvert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f9749fe3576a687c3c42f3794cefe8f8d91e62f939c66c0a32dbb3f74255/ManualResetEventSlim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/avina/RiderProjects/MicroServices-Ecommerce/aspnetrun-microservices/src/Services/Basket/Basket.API/Entities/ShoppingCartItem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Localization/Localizable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Repositories/BasketRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Repositories/IBasketRepository.cs" root0="FORCE_HIGHLIGHTING" />
@@ -152,7 +154,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.Discount.Grpc">
+  <component name="RunManager" selected=".NET Launch Settings Profile.Ordering.API">
     <configuration name="Basket.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Basket/Basket.API/Basket.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -477,14 +479,8 @@
       <workItem from="1690235978063" duration="745000" />
       <workItem from="1690287883931" duration="1783000" />
       <workItem from="1690290317034" duration="2354000" />
-      <workItem from="1690292997290" duration="12135000" />
-    </task>
-    <task id="LOCAL-00009" summary="✨(Program.cs) : Added Redis Service on Startup">
-      <created>1680988067883</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1680988067883</updated>
+      <workItem from="1690292997290" duration="17155000" />
+      <workItem from="1690361822575" duration="2509000" />
     </task>
     <task id="LOCAL-00010" summary="✨(BasketController) : Implemented Basket Controller">
       <created>1681163036086</created>
@@ -822,7 +818,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690317044986</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="🚧(Program,OcelotApiGw) : Added Ocelot service and logging">
+      <created>1690320191370</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1690320191370</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -855,7 +858,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="✨(CheckoutCommandHandler,CheckOutOrderCommand): Added Checkoutcommand" />
     <MESSAGE value="✨(CheckOutCommandValidator) : Added Validation in CheckOutCommandValidator" />
     <MESSAGE value="♻️(GetOrderlistQuery*) :perfrom Refactoring in Response Model" />
     <MESSAGE value="(OrderContext ,OrderContextSeed) : Addded OrderContext class and orderContext" />
@@ -880,7 +882,8 @@
     <MESSAGE value="⚡️(Basket.Api) : Handled Excpetion from GRPC" />
     <MESSAGE value="(project) : Renamed folder name to event bus" />
     <MESSAGE value="(Hands-ONMicroServices) : Add Api Gateway Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="(Hands-ONMicroServices) : Add Api Gateway Project" />
+    <MESSAGE value="(Program,OcelotApiGw) : Added Ocelot service and logging" />
+    <option name="LAST_COMMIT_MESSAGE" value="(Program,OcelotApiGw) : Added Ocelot service and logging" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

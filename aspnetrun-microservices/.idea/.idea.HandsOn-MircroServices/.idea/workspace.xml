@@ -20,14 +20,7 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🎉(Shopping.Aggregator) : Added a project shopping aggregator">
-      <change afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/BasketItemExtendedModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/BasketModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/CatalogModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/OrderResponseModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Shopping.Aggregator.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Shopping.Aggregator.csproj" afterDir="false" />
-    </list>
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🚧(HttpExtension) : Added http Extension methods for HttpClient" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,6 +97,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/eaf53ade803ac5b1d88b7222b58be5318268b6f95e420e21446447cf184e4a/ConnectionFactory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f3981d658666ec9cc1e6958fe22f8614bfe02ccb6625b056c3ece3729c9262/JsonConvert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f9749fe3576a687c3c42f3794cefe8f8d91e62f939c66c0a32dbb3f74255/ManualResetEventSlim.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/avina/RiderProjects/MicroServices-Ecommerce/aspnetrun-microservices/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Localization/Localizable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Repositories/BasketRepository.cs" root0="FORCE_HIGHLIGHTING" />
@@ -557,27 +551,7 @@
       <workItem from="1690292997290" duration="17155000" />
       <workItem from="1690361822575" duration="20180000" />
       <workItem from="1690407463277" duration="2057000" />
-    </task>
-    <task id="LOCAL-00018" summary="🚧(Discount.Grpc) : Added replication code of Discount.Api ,replication needs to removed">
-      <created>1685208003802</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1685208003802</updated>
-    </task>
-    <task id="LOCAL-00019" summary="🚧(discount.proto) : Wrote my first ever proto file, discount.proto">
-      <created>1685226191667</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1685226191667</updated>
-    </task>
-    <task id="LOCAL-00020" summary="🚧(DiscountService): intial implmentation of Discount.Service">
-      <created>1685227945647</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1685227945647</updated>
+      <workItem from="1690489332101" duration="4359000" />
     </task>
     <task id="LOCAL-00021" summary="✨(DiscountService,DiscountProfile): Added DiscountService and also added AutoMapper">
       <created>1685285940041</created>
@@ -901,7 +875,28 @@
       <option name="project" value="LOCAL" />
       <updated>1690408522233</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="🎨(BasketService,CatalogService,OrderServices) : Added Order,Basket,Catalog Mircroservice">
+      <created>1690493067425</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1690493067426</updated>
+    </task>
+    <task id="LOCAL-00068" summary="🚧(Program.cs) : Added services in startup">
+      <created>1690493587726</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1690493587726</updated>
+    </task>
+    <task id="LOCAL-00069" summary="🚧(HttpExtension) : Added http Extension methods for HttpClient">
+      <created>1690494386984</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1690494386984</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -934,9 +929,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="(ApplicaitonServiceRegistartion,Migration) : Fixed Mediatr Isuue and Run Intital Migration" />
-    <MESSAGE value="✨(docker-compose) : Added Rabbit Mq image in docker compose" />
-    <MESSAGE value="(BasketCheckoutEvent,EventBus.Messages,IntegrationBaseEvent) : Add Event Bus project and also created Intergratiom Base Event class" />
     <MESSAGE value="⬆️(Basket.Api) : Added Rabbit Mq project dependices" />
     <MESSAGE value="(BasketCheckoutEvent,BasketController) : Fixed some class issues" />
     <MESSAGE value="(BasketCheckout,BasketController) : Added Checkout Method in Basket Controller" />
@@ -959,7 +951,10 @@
     <MESSAGE value="(Ocelot.Devleopmment.Json) : Add configuration for development enviroment" />
     <MESSAGE value="(Dockerfile,docker-Compose) : Added Docker Support for Api Gateway" />
     <MESSAGE value="(Shopping.Aggregator) : Added a project shopping aggregator" />
-    <option name="LAST_COMMIT_MESSAGE" value="(Shopping.Aggregator) : Added a project shopping aggregator" />
+    <MESSAGE value="(BasketService,CatalogService,OrderServices) : Added Order,Basket,Catalog Mircroservice" />
+    <MESSAGE value="(Program.cs) : Added services in startup" />
+    <MESSAGE value="(HttpExtension) : Added http Extension methods for HttpClient" />
+    <option name="LAST_COMMIT_MESSAGE" value="(HttpExtension) : Added http Extension methods for HttpClient" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

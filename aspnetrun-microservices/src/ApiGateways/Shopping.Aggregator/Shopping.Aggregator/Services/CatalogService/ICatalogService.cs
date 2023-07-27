@@ -6,6 +6,6 @@ public interface ICatalogService
 {
     Task<IEnumerable<CatalogModel>> GetCatalog();
     Task<IEnumerable<CatalogModel>> GetCatalogByCategory(string category);
-    Task<IEnumerable<CatalogModel>> GetCatalog(string id);
+    Task<CatalogModel> GetCatalog(string id);
 
 }

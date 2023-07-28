@@ -12,10 +12,10 @@ public class OrderService : IOrderService
         _client = client ?? throw new ArgumentNullException(nameof(client));
     }
 
-    public async Task<IEnumerable<OrderResponseModel>> GetOrdersByUserName(string userName)
+    public async Task<IEnumerable<OrderResponse>> GetOrdersByUserName(string userName)
     {
         var response = await _client.GetAsync($"/api/v1/Order/{userName}");
-        return await response.ReadContentAs<List<OrderResponseModel>>() ?? Enumerable.Empty<OrderResponseModel>();
+        return await response.ReadContentAs<IEnumerable<OrderResponse>>() ?? Enumerable.Empty<OrderResponse>();
 
     }
 }

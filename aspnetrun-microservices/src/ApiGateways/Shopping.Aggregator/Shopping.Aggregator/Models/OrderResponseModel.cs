@@ -21,3 +21,8 @@ public class OrderResponseModel
     public string? CVV { get; set; }= string.Empty;
     public int PaymentMethod { get; set; }
 }
+
+public class OrderResponse
+{
+    public OrderResponseModel Order { get; set; } = new();
+}

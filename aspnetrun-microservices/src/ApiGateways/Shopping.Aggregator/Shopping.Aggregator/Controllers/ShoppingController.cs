@@ -21,13 +21,14 @@ public class ShoppingController : ControllerBase
         _orderService = orderService;
     }
 
-    [HttpGet("{username}", Name = "GetShopping")]
+    [HttpGet("{username:required}", Name = "GetShopping")]
+
 [ProducesResponseType(typeof(ShoppingModel),(int)HttpStatusCode.OK)]
-    public async Task<ActionResult<ShoppingModel>> GetShopping([FromQuery] string userName)
+    public async Task<ActionResult<ShoppingModel>> GetShopping(string username)
     {
-        var basket = await _basketService.GetBasket(userName);
+        var basket = await _basketService.GetBasket(username);
         if (basket == null)
-            throw new ArgumentNullException(nameof(userName));
+            throw new ArgumentNullException(nameof(username));
         foreach (var item in basket.Items)
         {
             var product = await _catalogService.GetCatalog(item.ProductId);
@@ -35,10 +36,10 @@ public class ShoppingController : ControllerBase
             
         }
 
-        var orders = await _orderService.GetOrdersByUserName(userName);
+        var orders = await _orderService.GetOrdersByUserName(username);
         var shoppingModel =  new ShoppingModel()
         {
-            UserName = userName,
+            UserName = username,
             BasketWithProducts = basket,
             Orders = orders
         };

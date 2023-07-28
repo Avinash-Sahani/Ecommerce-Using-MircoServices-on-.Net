@@ -20,19 +20,12 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🚧(Services) : Added implmentaion of the methods of all Catalog,Basket and ORder Service">
-      <change afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Controllers/ShoppingController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/ShoppingModel.cs" afterDir="false" />
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🚧(ShoppingController):Add Controller in Shopping Class and wrote the aggregator method">
+      <change afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/BasketItemExtendedModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/BasketItemExtendedModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/BasketModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/BasketModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/CatalogModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/CatalogModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/OrderResponseModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/OrderResponseModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Services/BasketService/BasketService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Services/BasketService/BasketService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Services/BasketService/IBasketService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Services/BasketService/IBasketService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Services/OrderService/OrderService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Services/OrderService/OrderService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Controllers/ShoppingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Controllers/ShoppingController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Shopping.Aggregator.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Shopping.Aggregator.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/testCase.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/testCase.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,12 +49,6 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/025e77837d8c4e0699f6e06ef02270d718e5e0/7e/227b2ea4/DbConnectionOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/20fd7f9eb74642ce9c6654e64dc453771e3880/90/9f00aee4/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70f617fc68cf47c4af27e06f2b56f801b1c8a8/54/0ba919a5/AsyncValueTaskMethodBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
@@ -116,12 +103,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/eaf53ade803ac5b1d88b7222b58be5318268b6f95e420e21446447cf184e4a/ConnectionFactory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f3981d658666ec9cc1e6958fe22f8614bfe02ccb6625b056c3ece3729c9262/JsonConvert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f9749fe3576a687c3c42f3794cefe8f8d91e62f939c66c0a32dbb3f74255/ManualResetEventSlim.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/avina/RiderProjects/MicroServices-Ecommerce/aspnetrun-microservices/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/CatalogModel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Localization/Localizable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Repositories/BasketRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Repositories/IBasketRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/avina/RiderProjects/MicroServices-Ecommerce/aspnetrun-microservices/src/Services/Catalog/Catalog.API/Controllers/CatalogController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Data/ICatalogContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Release/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Exceptions/NotFoundException.cs" root0="FORCE_HIGHLIGHTING" />
@@ -578,28 +563,8 @@
       <workItem from="1690407463277" duration="2057000" />
       <workItem from="1690489332101" duration="8997000" />
       <workItem from="1690539077638" duration="3080000" />
-      <workItem from="1690564513644" duration="4652000" />
-    </task>
-    <task id="LOCAL-00022" summary="➕(Basket.Api) : Added Discount Grpc Service Depenedency in Basket.API">
-      <created>1685286951127</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1685286951127</updated>
-    </task>
-    <task id="LOCAL-00023" summary="🚧(BasketController,DiscountGrpcService) : Added DiscountGrpcService.cs and Add GetDiscount Method">
-      <created>1685287738226</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1685287738226</updated>
-    </task>
-    <task id="LOCAL-00024" summary="🩹(basketController) : Fixed Grpc Call Issues">
-      <created>1685481735724</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1685481735725</updated>
+      <workItem from="1690564513644" duration="6355000" />
+      <workItem from="1690574547907" duration="2601000" />
     </task>
     <task id="LOCAL-00025" summary="✨(Ordering.Api) : Intialized order api service">
       <created>1685659425671</created>
@@ -923,7 +888,28 @@
       <option name="project" value="LOCAL" />
       <updated>1690498491846</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="🚧(BasketModel,CatalogModel,ShoppingModel) : Made changes in models based on response">
+      <created>1690569860215</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1690569860216</updated>
+    </task>
+    <task id="LOCAL-00072" summary="🐛(BasketItemExtendedModel,BasketService,OrderService,IOrderService) : Fixed issues in rest methods">
+      <created>1690569963252</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1690569963252</updated>
+    </task>
+    <task id="LOCAL-00073" summary="🚧(ShoppingController):Add Controller in Shopping Class and wrote the aggregator method">
+      <created>1690570519055</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1690570519055</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -956,9 +942,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="(BasketCheckoutEvent,BasketController) : Fixed some class issues" />
-    <MESSAGE value="(BasketCheckout,BasketController) : Added Checkout Method in Basket Controller" />
-    <MESSAGE value="(BasketController) : Added discount logic in update basket" />
     <MESSAGE value="(BasketCheckOutEvent) : Inheriered Basket Checkout Event from Intergration Base" />
     <MESSAGE value="✨(BasketCheckoutConsumer,BasketCheckoutEvent,InfrastructureServiceRegistration) : Consumed BasketCheckoutEvent in RabbitMq" />
     <MESSAGE value="(Basket.Api,Order.Api) : Update Docker Files and changes in docker-compose" />
@@ -981,7 +964,10 @@
     <MESSAGE value="(Program.cs) : Added services in startup" />
     <MESSAGE value="(HttpExtension) : Added http Extension methods for HttpClient" />
     <MESSAGE value="(Services) : Added implmentaion of the methods of all Catalog,Basket and ORder Service" />
-    <option name="LAST_COMMIT_MESSAGE" value="(Services) : Added implmentaion of the methods of all Catalog,Basket and ORder Service" />
+    <MESSAGE value="(BasketModel,CatalogModel,ShoppingModel) : Made changes in models based on response" />
+    <MESSAGE value="(BasketItemExtendedModel,BasketService,OrderService,IOrderService) : Fixed issues in rest methods" />
+    <MESSAGE value="(ShoppingController):Add Controller in Shopping Class and wrote the aggregator method" />
+    <option name="LAST_COMMIT_MESSAGE" value="(ShoppingController):Add Controller in Shopping Class and wrote the aggregator method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1046,13 +1032,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Controllers/ShoppingController.cs</url>
-          <line>37</line>
+          <line>38</line>
           <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\ApiGateways\Shopping.Aggregator\Shopping.Aggregator\Controllers\ShoppingController.cs" initialLine="37" containingFunctionPresentation="method 'GetShopping'">
             <startOffsets>
-              <option value="1266" />
+              <option value="1264" />
             </startOffsets>
             <endOffsets>
-              <option value="1329" />
+              <option value="1327" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="53" />
@@ -1075,10 +1061,10 @@
           <line>16</line>
           <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\ApiGateways\Shopping.Aggregator\Shopping.Aggregator\Services\OrderService\OrderService.cs" initialLine="16" containingFunctionPresentation="method 'GetOrdersByUserName'">
             <startOffsets>
-              <option value="440" />
+              <option value="435" />
             </startOffsets>
             <endOffsets>
-              <option value="507" />
+              <option value="502" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="56" />
@@ -1095,6 +1081,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Controllers/ShoppingController.cs</url>
+          <line>28</line>
+          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\ApiGateways\Shopping.Aggregator\Shopping.Aggregator\Controllers\ShoppingController.cs" initialLine="27" containingFunctionPresentation="method 'GetShopping'">
+            <startOffsets>
+              <option value="898" />
+            </startOffsets>
+            <endOffsets>
+              <option value="952" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -20,7 +20,20 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🚧(HttpExtension) : Added http Extension methods for HttpClient" />
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🚧(Services) : Added implmentaion of the methods of all Catalog,Basket and ORder Service">
+      <change afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Controllers/ShoppingController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/ShoppingModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/BasketItemExtendedModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/BasketItemExtendedModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/BasketModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/BasketModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/CatalogModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/CatalogModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/OrderResponseModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/OrderResponseModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Services/BasketService/BasketService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Services/BasketService/BasketService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Services/BasketService/IBasketService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Services/BasketService/IBasketService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Services/OrderService/OrderService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Services/OrderService/OrderService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Shopping.Aggregator.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Shopping.Aggregator.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/testCase.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Discount/Discount.Grpc/testCase.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +56,12 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/025e77837d8c4e0699f6e06ef02270d718e5e0/7e/227b2ea4/DbConnectionOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/20fd7f9eb74642ce9c6654e64dc453771e3880/90/9f00aee4/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70f617fc68cf47c4af27e06f2b56f801b1c8a8/54/0ba919a5/AsyncValueTaskMethodBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
@@ -97,11 +116,12 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/eaf53ade803ac5b1d88b7222b58be5318268b6f95e420e21446447cf184e4a/ConnectionFactory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f3981d658666ec9cc1e6958fe22f8614bfe02ccb6625b056c3ece3729c9262/JsonConvert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f9749fe3576a687c3c42f3794cefe8f8d91e62f939c66c0a32dbb3f74255/ManualResetEventSlim.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/avina/RiderProjects/MicroServices-Ecommerce/aspnetrun-microservices/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/avina/RiderProjects/MicroServices-Ecommerce/aspnetrun-microservices/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Models/CatalogModel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Localization/Localizable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Repositories/BasketRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Repositories/IBasketRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/avina/RiderProjects/MicroServices-Ecommerce/aspnetrun-microservices/src/Services/Catalog/Catalog.API/Controllers/CatalogController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Data/ICatalogContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/Release/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Application/Exceptions/NotFoundException.cs" root0="FORCE_HIGHLIGHTING" />
@@ -152,7 +172,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected=".NET Launch Settings Profile.Shopping.Aggregator: http (1)">
     <configuration name="Shopping.Aggregator" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -321,6 +341,21 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Shopping.Aggregator: http (1)" type="LaunchSettings" factoryName=".NET Launch Settings Profile" temporary="true">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Shopping.Aggregator.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="Shopping.Aggregator: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -350,16 +385,6 @@
       <method v="2">
         <option name="Build" />
       </method>
-    </configuration>
-    <configuration name="Catalog.API/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="buildOnly" value="true" />
-          <option name="sourceFilePath" value="src/Services/Catalog/Catalog.API/Dockerfile" />
-        </settings>
-      </deployment>
-      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
-      <method v="2" />
     </configuration>
     <configuration name="Catalog.Api/DockerCompose" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
       <deployment type="docker-compose.yml">
@@ -462,21 +487,21 @@
       <item itemvalue=".NET Launch Settings Profile.Discount.API: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.Catalog.API" />
       <item itemvalue=".NET Launch Settings Profile.Basket.API" />
+      <item itemvalue=".NET Launch Settings Profile.Shopping.Aggregator: http (1)" />
       <item itemvalue=".NET Project.Shopping.Aggregator" />
       <item itemvalue="Docker.Catalog.Api/DockerCompose" />
       <item itemvalue="Docker.docker-compose.yml.discount.api: Compose Deployment" />
-      <item itemvalue="Docker.Catalog.API/Dockerfile" />
       <item itemvalue="Docker.docker-compose.yml.catalog.api: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.basket.api: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue=".NET Launch Settings Profile.Shopping.Aggregator: http (1)" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.discount.api: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.basket.api: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.catalog.api: Compose Deployment" />
-        <item itemvalue="Docker.Catalog.API/Dockerfile" />
       </list>
     </recent_temporary>
   </component>
@@ -551,14 +576,9 @@
       <workItem from="1690292997290" duration="17155000" />
       <workItem from="1690361822575" duration="20180000" />
       <workItem from="1690407463277" duration="2057000" />
-      <workItem from="1690489332101" duration="4359000" />
-    </task>
-    <task id="LOCAL-00021" summary="✨(DiscountService,DiscountProfile): Added DiscountService and also added AutoMapper">
-      <created>1685285940041</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1685285940041</updated>
+      <workItem from="1690489332101" duration="8997000" />
+      <workItem from="1690539077638" duration="3080000" />
+      <workItem from="1690564513644" duration="4652000" />
     </task>
     <task id="LOCAL-00022" summary="➕(Basket.Api) : Added Discount Grpc Service Depenedency in Basket.API">
       <created>1685286951127</created>
@@ -896,7 +916,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690494386984</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="🚧(Services) : Added implmentaion of the methods of all Catalog,Basket and ORder Service">
+      <created>1690498491846</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1690498491846</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -929,7 +956,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="⬆️(Basket.Api) : Added Rabbit Mq project dependices" />
     <MESSAGE value="(BasketCheckoutEvent,BasketController) : Fixed some class issues" />
     <MESSAGE value="(BasketCheckout,BasketController) : Added Checkout Method in Basket Controller" />
     <MESSAGE value="(BasketController) : Added discount logic in update basket" />
@@ -954,7 +980,8 @@
     <MESSAGE value="(BasketService,CatalogService,OrderServices) : Added Order,Basket,Catalog Mircroservice" />
     <MESSAGE value="(Program.cs) : Added services in startup" />
     <MESSAGE value="(HttpExtension) : Added http Extension methods for HttpClient" />
-    <option name="LAST_COMMIT_MESSAGE" value="(HttpExtension) : Added http Extension methods for HttpClient" />
+    <MESSAGE value="(Services) : Added implmentaion of the methods of all Catalog,Basket and ORder Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="(Services) : Added implmentaion of the methods of all Catalog,Basket and ORder Service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1016,6 +1043,58 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Controllers/ShoppingController.cs</url>
+          <line>37</line>
+          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\ApiGateways\Shopping.Aggregator\Shopping.Aggregator\Controllers\ShoppingController.cs" initialLine="37" containingFunctionPresentation="method 'GetShopping'">
+            <startOffsets>
+              <option value="1266" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1329" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs</url>
+          <line>58</line>
+          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Basket\Basket.API\Controllers\BasketController.cs" initialLine="58" containingFunctionPresentation="local function 'ApplyDiscountCoupons'">
+            <startOffsets>
+              <option value="1990" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2084" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Services/OrderService/OrderService.cs</url>
+          <line>16</line>
+          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\ApiGateways\Shopping.Aggregator\Shopping.Aggregator\Services\OrderService\OrderService.cs" initialLine="16" containingFunctionPresentation="method 'GetOrdersByUserName'">
+            <startOffsets>
+              <option value="440" />
+            </startOffsets>
+            <endOffsets>
+              <option value="507" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Extensions/HttpExtensions.cs</url>
+          <line>13</line>
+          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\ApiGateways\Shopping.Aggregator\Shopping.Aggregator\Extensions\HttpExtensions.cs" initialLine="13" containingFunctionPresentation="method 'ReadContentAs'">
+            <startOffsets>
+              <option value="452" />
+            </startOffsets>
+            <endOffsets>
+              <option value="569" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

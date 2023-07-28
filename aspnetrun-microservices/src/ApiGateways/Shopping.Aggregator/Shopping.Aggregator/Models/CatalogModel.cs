@@ -9,6 +9,7 @@ public class CatalogModel
     public string? Description { get; set; }
     public string? ImageFile { get; set; }
     
+    public string? Summary { get; set; }
     public decimal Price { get; set; }
     
 }

@@ -167,10 +167,9 @@ services:
       -  "ApiSettings:CatalogUrl=http://catalog.api"
       - "ApiSettings:BasketUrl=http://basket.api"
       - "ApiSettings:OrderingUrl=http://ordering.api"
-    image: shoppingaggregator
     build:
       context: .
-      dockerfile: src/ApiGateways/Shopping.Aggregator/Dockerfile
+      dockerfile: src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Dockerfile
     depends_on:
       - catalog.api
       - basket.api

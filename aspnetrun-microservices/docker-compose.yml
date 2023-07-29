@@ -177,7 +177,23 @@ services:
       - order.api
     ports:
       - "8005:80"
-  
+  client.app:
+    container_name: client.app
+    build:
+      context: .
+      dockerfile: src/WebApps/AspnetRunBasics/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ApiSettings:GatewayAddress=http://ocelotapigw"
+    depends_on:
+      - ocelotapigw
+      - catalog.api
+      - basket.api
+      - discount.api
+      - order.api
+    ports:
+      - "8006:80"
+
 volumes:
   mongo_data:
   portainer_data:

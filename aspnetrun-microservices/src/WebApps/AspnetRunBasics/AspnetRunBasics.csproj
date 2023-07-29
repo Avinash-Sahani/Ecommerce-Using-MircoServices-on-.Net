@@ -17,6 +17,9 @@
     <Content Include="..\..\..\..\..\..\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\.dockerignore">
       <Link>.dockerignore</Link>
     </Content>
+    <Content Include="..\..\..\.dockerignore">
+      <Link>.dockerignore</Link>
+    </Content>
   </ItemGroup>
 
 

@@ -5,10 +5,10 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["../../../Downloads/AspnetMicroservices-main/AspnetMicroservices-main/src/WebApps/AspnetRunBasics/AspnetRunBasics.csproj", "../../../Downloads/AspnetMicroservices-main/AspnetMicroservices-main/src/WebApps/AspnetRunBasics/"]
-RUN dotnet restore "../../../Downloads/AspnetMicroservices-main/AspnetMicroservices-main/src/WebApps/AspnetRunBasics/AspnetRunBasics.csproj"
+COPY ["src/WebApps/AspnetRunBasics/AspnetRunBasics.csproj", "src/WebApps/AspnetRunBasics/"]
+RUN dotnet restore "src/WebApps/AspnetRunBasics/AspnetRunBasics.csproj"
 COPY . .
-WORKDIR "/src/../../../Downloads/AspnetMicroservices-main/AspnetMicroservices-main/src/WebApps/AspnetRunBasics"
+WORKDIR "/src/src/WebApps/AspnetRunBasics"
 RUN dotnet build "AspnetRunBasics.csproj" -c Release -o /app/build
 
 FROM build AS publish

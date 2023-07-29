@@ -5,6 +5,7 @@ using Basket.API.GrpcServices;
 using Basket.API.Repositories;
 using Catalog.API.Localization;
 using EventBus.Messages.Events;
+using Grpc.Core;
 using MassTransit;
 using Microsoft.AspNetCore.Mvc;
 
@@ -58,6 +59,10 @@ public class BasketController : ControllerBase
                 {
                     var coupon = await DiscountGrpcService.GetDiscountByProductName(shoppingCartItem.ProductName);
                     shoppingCartItem.Price -= coupon.Amount;
+                }
+                catch (RpcException e)
+                {
+                    
                 }
                 catch (Exception e)
                 {

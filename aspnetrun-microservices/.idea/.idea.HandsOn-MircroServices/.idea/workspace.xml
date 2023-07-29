@@ -22,10 +22,10 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🔧(docker-compose) : fixed docker path file issue">
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🚧(Hands-On-Microservices) : Fix Web App isues">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HandsOn-MircroServices.sln" beforeDir="false" afterPath="$PROJECT_DIR$/HandsOn-MircroServices.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +60,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bb7b8e9f82ee4cc296a57aef759a3b4b145000/ef/dd800da9/NpgsqlConnection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c11a2aa831d04e8eba36f4248c870ea110e00/ca/ecee36a1/IRequestHandler`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c13f49990bf34d18b209c4f451026a97a226b0/f2/5c6ee142/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d8daa8e79bda41d48032858940f4722f70880/fe/490db9f1/ExecutorFactory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f625526d486445c9b3252020c5bed4e820afc0/e3/8a4656b7/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/10c1111dd54f58aafa41e2bebf476b3c1d8e1fef1961b1a3594388682a79e/ApplicationException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/12ce3c2b287b1deb85cf8b1d75df29b2d8ac68a7c562f093813f2d9e55e1b6f/ConfigureNamedOptions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -539,11 +540,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.basket.api: Compose Deployment" />
+        <item itemvalue=".NET Launch Settings Profile.Shopping.Aggregator: http (1)" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.shopping.aggregator: Compose Deployment" />
-        <item itemvalue=".NET Launch Settings Profile.Shopping.Aggregator: http (1)" />
         <item itemvalue="Docker.docker-compose.yml.discount.api: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.basket.api: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -621,14 +622,8 @@
       <workItem from="1690489332101" duration="8997000" />
       <workItem from="1690539077638" duration="3080000" />
       <workItem from="1690564513644" duration="6355000" />
-      <workItem from="1690574547907" duration="10651000" />
-    </task>
-    <task id="LOCAL-00027" summary="🎨(Ordering): Added files  in Git">
-      <created>1685660322894</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1685660322894</updated>
+      <workItem from="1690574547907" duration="11440000" />
+      <workItem from="1690624736870" duration="5231000" />
     </task>
     <task id="LOCAL-00028" summary="🎨(Ordering) : Added references between layers">
       <created>1685660595837</created>
@@ -966,7 +961,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690581312378</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="🚧(Hands-On-Microservices) : Fix Web App isues">
+      <created>1690588193424</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1690588193425</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -999,7 +1001,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="(Basket.Api,Order.Api) : Update Docker Files and changes in docker-compose" />
     <MESSAGE value="(UnusedReferences) : Remove Unused References" />
     <MESSAGE value="(ShoppingCartItem) : Remove Color from ShoppingCartItem" />
     <MESSAGE value="(Basket.API) : Fixed Docker Build Image File Issue" />
@@ -1024,7 +1025,8 @@
     <MESSAGE value="(ShoppingController):Add Controller in Shopping Class and wrote the aggregator method" />
     <MESSAGE value="(docker-compose,Dockerfile) : Added Docker support in Shopping.Aggregator" />
     <MESSAGE value="(docker-compose) : fixed docker path file issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="(docker-compose) : fixed docker path file issue" />
+    <MESSAGE value="(Hands-On-Microservices) : Fix Web App isues" />
+    <option name="LAST_COMMIT_MESSAGE" value="(Hands-On-Microservices) : Fix Web App isues" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1063,13 +1065,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs</url>
-          <line>88</line>
+          <line>93</line>
           <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Basket\Basket.API\Controllers\BasketController.cs" initialLine="79" containingFunctionPresentation="method 'Checkout'">
             <startOffsets>
-              <option value="2989" />
+              <option value="3102" />
             </startOffsets>
             <endOffsets>
-              <option value="3034" />
+              <option value="3147" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="48" />
@@ -1099,19 +1101,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs</url>
-          <line>58</line>
-          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Basket\Basket.API\Controllers\BasketController.cs" initialLine="58" containingFunctionPresentation="local function 'ApplyDiscountCoupons'">
-            <startOffsets>
-              <option value="1990" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2084" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Services/OrderService/OrderService.cs</url>
@@ -1154,6 +1143,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$USER_HOME$/Downloads/AspnetMicroservices-main/AspnetMicroservices-main/src/WebApps/AspnetRunBasics/Services/CatalogService.cs</url>
+          <line>32</line>
+          <properties documentPath="C:\Users\avina\Downloads\AspnetMicroservices-main\AspnetMicroservices-main\src\WebApps\AspnetRunBasics\Services\CatalogService.cs" initialLine="32" containingFunctionPresentation="method 'GetCatalogByCategory'">
+            <startOffsets>
+              <option value="1007" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1078" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$USER_HOME$/Downloads/AspnetMicroservices-main/AspnetMicroservices-main/src/WebApps/AspnetRunBasics/Services/CatalogService.cs</url>
           <line>26</line>
           <properties documentPath="C:\Users\avina\Downloads\AspnetMicroservices-main\AspnetMicroservices-main\src\WebApps\AspnetRunBasics\Services\CatalogService.cs" initialLine="26" containingFunctionPresentation="method 'GetCatalog'">
             <startOffsets>
@@ -1163,33 +1165,59 @@
               <option value="817" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="63" />
+          <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$USER_HOME$/Downloads/AspnetMicroservices-main/AspnetMicroservices-main/src/WebApps/AspnetRunBasics/Services/CatalogService.cs</url>
-          <line>20</line>
-          <properties documentPath="C:\Users\avina\Downloads\AspnetMicroservices-main\AspnetMicroservices-main\src\WebApps\AspnetRunBasics\Services\CatalogService.cs" initialLine="20" containingFunctionPresentation="method 'GetCatalog'">
+          <url>file://$USER_HOME$/Downloads/AspnetMicroservices-main/AspnetMicroservices-main/src/WebApps/AspnetRunBasics/Pages/Product.cshtml.cs</url>
+          <line>31</line>
+          <properties documentPath="C:\Users\avina\Downloads\AspnetMicroservices-main\AspnetMicroservices-main\src\WebApps\AspnetRunBasics\Pages\Product.cshtml.cs" initialLine="31" containingFunctionPresentation="method 'OnGetAsync'">
             <startOffsets>
-              <option value="544" />
+              <option value="1117" />
             </startOffsets>
             <endOffsets>
-              <option value="594" />
+              <option value="1170" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="64" />
+          <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$USER_HOME$/Downloads/AspnetMicroservices-main/AspnetMicroservices-main/src/WebApps/AspnetRunBasics/Services/CatalogService.cs</url>
-          <line>21</line>
-          <properties documentPath="C:\Users\avina\Downloads\AspnetMicroservices-main\AspnetMicroservices-main\src\WebApps\AspnetRunBasics\Services\CatalogService.cs" initialLine="21" containingFunctionPresentation="method 'GetCatalog'">
+          <url>file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs</url>
+          <line>67</line>
+          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Basket\Basket.API\Controllers\BasketController.cs" initialLine="62" containingFunctionPresentation="local function 'ApplyDiscountCoupons'">
             <startOffsets>
-              <option value="607" />
+              <option value="2329" />
             </startOffsets>
             <endOffsets>
-              <option value="665" />
+              <option value="2330" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="65" />
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs</url>
+          <line>59</line>
+          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Basket\Basket.API\Controllers\BasketController.cs" initialLine="58" containingFunctionPresentation="local function 'ApplyDiscountCoupons'">
+            <startOffsets>
+              <option value="2007" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2101" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$USER_HOME$/Downloads/AspnetMicroservices-main/AspnetMicroservices-main/src/WebApps/AspnetRunBasics/Services/BasketService.cs</url>
+          <line>37</line>
+          <properties documentPath="C:\Users\avina\Downloads\AspnetMicroservices-main\AspnetMicroservices-main\src\WebApps\AspnetRunBasics\Services\BasketService.cs" initialLine="37" containingFunctionPresentation="method 'UpdateBasket'">
+            <startOffsets>
+              <option value="1168" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1189" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

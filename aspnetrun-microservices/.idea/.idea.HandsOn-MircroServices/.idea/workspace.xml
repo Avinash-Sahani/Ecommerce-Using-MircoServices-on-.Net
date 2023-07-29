@@ -22,10 +22,8 @@
     <projectFile profileName="Ordering.API">src/Services/Ordering/Ordering.API/Ordering.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="🚧(Hands-On-Microservices) : Fix Web App isues">
+    <list default="true" id="07b59a57-fbfd-46ae-8324-b0ad2575f7e5" name="Changes" comment="⚡️(BasketController) : Minor fixes in BasketControoler">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HandsOn-MircroServices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Ordering/Ordering.API/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +47,8 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/025e77837d8c4e0699f6e06ef02270d718e5e0/7e/227b2ea4/DbConnectionOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/20fd7f9eb74642ce9c6654e64dc453771e3880/90/9f00aee4/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70f617fc68cf47c4af27e06f2b56f801b1c8a8/54/0ba919a5/AsyncValueTaskMethodBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
@@ -140,30 +140,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.42647058&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TODO_SCOPE": "All Places",
+    "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.42226",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;protobuf&quot;,
-      &quot;GitIgnore&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "protobuf",
+      "GitIgnore"
     ],
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\avina\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\avina\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\avina\\AppData\\Local\\Symbols\\src&quot;
+    "rider.external.source.directories": [
+      "C:\\Users\\avina\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\avina\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\avina\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.AspnetRunBasics: IIS Express">
     <configuration name="AspnetRunBasics" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -623,14 +623,7 @@
       <workItem from="1690539077638" duration="3080000" />
       <workItem from="1690564513644" duration="6355000" />
       <workItem from="1690574547907" duration="11440000" />
-      <workItem from="1690624736870" duration="5231000" />
-    </task>
-    <task id="LOCAL-00028" summary="🎨(Ordering) : Added references between layers">
-      <created>1685660595837</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1685660595837</updated>
+      <workItem from="1690624736870" duration="7931000" />
     </task>
     <task id="LOCAL-00029" summary="✨(EntityBase,ValueObjects) : Added base Classes for entity and value">
       <created>1685826145489</created>
@@ -968,7 +961,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690588193425</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="⚡️(BasketController) : Minor fixes in BasketControoler">
+      <created>1690631570822</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1690631570823</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1001,7 +1001,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="(UnusedReferences) : Remove Unused References" />
     <MESSAGE value="(ShoppingCartItem) : Remove Color from ShoppingCartItem" />
     <MESSAGE value="(Basket.API) : Fixed Docker Build Image File Issue" />
     <MESSAGE value="⚡️(Basket.Api) : Handled Excpetion from GRPC" />
@@ -1026,7 +1025,8 @@
     <MESSAGE value="(docker-compose,Dockerfile) : Added Docker support in Shopping.Aggregator" />
     <MESSAGE value="(docker-compose) : fixed docker path file issue" />
     <MESSAGE value="(Hands-On-Microservices) : Fix Web App isues" />
-    <option name="LAST_COMMIT_MESSAGE" value="(Hands-On-Microservices) : Fix Web App isues" />
+    <MESSAGE value="⚡️(BasketController) : Minor fixes in BasketControoler" />
+    <option name="LAST_COMMIT_MESSAGE" value="⚡️(BasketController) : Minor fixes in BasketControoler" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1037,188 +1037,6 @@
           </properties>
           <option name="timeStamp" value="7" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/EventBusConsumer/BasketCheckoutConsumer.cs</url>
-          <line>23</line>
-          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Ordering\Ordering.Infrastructure\EventBusConsumer\BasketCheckoutConsumer.cs" initialLine="23" containingFunctionPresentation="method 'Consume'">
-            <startOffsets>
-              <option value="653" />
-            </startOffsets>
-            <endOffsets>
-              <option value="691" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Services/Ordering/Ordering.Infrastructure/Persistance/OrderContextSeed.cs</url>
-          <line>9</line>
-          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Ordering\Ordering.Infrastructure\Persistance\OrderContextSeed.cs" initialLine="9" containingFunctionPresentation="method 'SeedAsync'">
-            <startOffsets>
-              <option value="263" />
-            </startOffsets>
-            <endOffsets>
-              <option value="294" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs</url>
-          <line>93</line>
-          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Basket\Basket.API\Controllers\BasketController.cs" initialLine="79" containingFunctionPresentation="method 'Checkout'">
-            <startOffsets>
-              <option value="3102" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3147" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/Program.cs</url>
-          <line>8</line>
-          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\ApiGateways\OcelotApiGw\Program.cs" initialLine="7" containingFunctionPresentation="">
-            <startOffsets>
-              <option value="308" />
-            </startOffsets>
-            <endOffsets>
-              <option value="421" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Controllers/ShoppingController.cs</url>
-          <line>38</line>
-          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\ApiGateways\Shopping.Aggregator\Shopping.Aggregator\Controllers\ShoppingController.cs" initialLine="37" containingFunctionPresentation="method 'GetShopping'">
-            <startOffsets>
-              <option value="1264" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1327" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Services/OrderService/OrderService.cs</url>
-          <line>16</line>
-          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\ApiGateways\Shopping.Aggregator\Shopping.Aggregator\Services\OrderService\OrderService.cs" initialLine="16" containingFunctionPresentation="method 'GetOrdersByUserName'">
-            <startOffsets>
-              <option value="435" />
-            </startOffsets>
-            <endOffsets>
-              <option value="502" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Extensions/HttpExtensions.cs</url>
-          <line>13</line>
-          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\ApiGateways\Shopping.Aggregator\Shopping.Aggregator\Extensions\HttpExtensions.cs" initialLine="13" containingFunctionPresentation="method 'ReadContentAs'">
-            <startOffsets>
-              <option value="452" />
-            </startOffsets>
-            <endOffsets>
-              <option value="569" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/Shopping.Aggregator/Controllers/ShoppingController.cs</url>
-          <line>28</line>
-          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\ApiGateways\Shopping.Aggregator\Shopping.Aggregator\Controllers\ShoppingController.cs" initialLine="27" containingFunctionPresentation="method 'GetShopping'">
-            <startOffsets>
-              <option value="898" />
-            </startOffsets>
-            <endOffsets>
-              <option value="952" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$USER_HOME$/Downloads/AspnetMicroservices-main/AspnetMicroservices-main/src/WebApps/AspnetRunBasics/Services/CatalogService.cs</url>
-          <line>32</line>
-          <properties documentPath="C:\Users\avina\Downloads\AspnetMicroservices-main\AspnetMicroservices-main\src\WebApps\AspnetRunBasics\Services\CatalogService.cs" initialLine="32" containingFunctionPresentation="method 'GetCatalogByCategory'">
-            <startOffsets>
-              <option value="1007" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1078" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$USER_HOME$/Downloads/AspnetMicroservices-main/AspnetMicroservices-main/src/WebApps/AspnetRunBasics/Services/CatalogService.cs</url>
-          <line>26</line>
-          <properties documentPath="C:\Users\avina\Downloads\AspnetMicroservices-main\AspnetMicroservices-main\src\WebApps\AspnetRunBasics\Services\CatalogService.cs" initialLine="26" containingFunctionPresentation="method 'GetCatalog'">
-            <startOffsets>
-              <option value="761" />
-            </startOffsets>
-            <endOffsets>
-              <option value="817" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$USER_HOME$/Downloads/AspnetMicroservices-main/AspnetMicroservices-main/src/WebApps/AspnetRunBasics/Pages/Product.cshtml.cs</url>
-          <line>31</line>
-          <properties documentPath="C:\Users\avina\Downloads\AspnetMicroservices-main\AspnetMicroservices-main\src\WebApps\AspnetRunBasics\Pages\Product.cshtml.cs" initialLine="31" containingFunctionPresentation="method 'OnGetAsync'">
-            <startOffsets>
-              <option value="1117" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1170" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs</url>
-          <line>67</line>
-          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Basket\Basket.API\Controllers\BasketController.cs" initialLine="62" containingFunctionPresentation="local function 'ApplyDiscountCoupons'">
-            <startOffsets>
-              <option value="2329" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2330" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Services/Basket/Basket.API/Controllers/BasketController.cs</url>
-          <line>59</line>
-          <properties documentPath="C:\Users\avina\RiderProjects\MicroServices-Ecommerce\aspnetrun-microservices\src\Services\Basket\Basket.API\Controllers\BasketController.cs" initialLine="58" containingFunctionPresentation="local function 'ApplyDiscountCoupons'">
-            <startOffsets>
-              <option value="2007" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2101" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$USER_HOME$/Downloads/AspnetMicroservices-main/AspnetMicroservices-main/src/WebApps/AspnetRunBasics/Services/BasketService.cs</url>
-          <line>37</line>
-          <properties documentPath="C:\Users\avina\Downloads\AspnetMicroservices-main\AspnetMicroservices-main\src\WebApps\AspnetRunBasics\Services\BasketService.cs" initialLine="37" containingFunctionPresentation="method 'UpdateBasket'">
-            <startOffsets>
-              <option value="1168" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1189" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
